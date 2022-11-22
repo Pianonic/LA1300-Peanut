@@ -23,11 +23,11 @@ Wir machen ein Programm mit dem man Black Jack spielen kann.
 | 1  |    Muss         | Funktional | Als Spieler möchte ich Eine Karte ziehen können. um einen höheren Kartenwert zu haben. |
 | 2  |    Muss         | Funktional | Als Spieler möchte ich meine Karten behalten können, um meinen Kartenwert nicht über 21 zu bringen. |
 | 3  |    Muss         | Funktional | Als Bank möchte ich ich zu beginn dem Spieler und mir jeweils 2 karten austeilen, um das spiel zu starten. |
-| 4  |    Kann         | Funktional | Als Spieler möchte ich meine 2 Karten spliten können wenn sie di gleichen karten sind, um meine chance zum gewinn zu erhöhen. |
+| 4  |    Kann         | Funktional | Als Spieler möchte ich meine 2 Karten spliten können wenn sie die gleichen karten sind, um meine chance zum gewinn zu erhöhen. |
 | 5  |    Muss         | Funktional | Als Spieler möchte ich meinen Einsatz verdoppeln können um meinen gewinn zu steigern wenn ich mich sicher fühle.|
 | 6  |    Kann         | Funktional | Als Spieler möchte ich vor jeder Runde meine Einsatz erhöhen/senken können, damit ich mehr Geld Sparen kann |
 | 7  |    Muss         | Funktional | Als Spieler möchte ich Mein Guthaben sehen können, um meine Einsätze besser abschätzen zu können |
-| 8  |    Muss         | Funktional | Als Spieler möchte icch Meine Karten sehen, um das Spiel spielen zu können. |
+| 8  |    Muss         | Funktional | Als Spieler möchte ich Meine Karten sehen, um das Spiel spielen zu können. |
 | 9  |    Muss         | Funktional | Als Spieler möchte ich das Spiel jederzeit verlassen können, um aufzuhören.|
 | 10 |    Kann         | Qualität   | Als Nutzer möchte ich ein übersichtliches Programm, um besser Spieler zu können. |
 | 11 |    Kann         | Rand       | Als Programmierer möchte ich mit WinForms arbeiten, da dies vorgegeben ist.|
@@ -51,24 +51,42 @@ Wir machen ein Programm mit dem man Black Jack spielen kann.
 
 ### 1.4 Diagramme
 
-![image](https://user-images.githubusercontent.com/110892739/203289016-a6374390-303c-4034-a528-f1b291726765.png)
+✍️ Hier können Sie PAPs, Use Case- und Gantt-Diagramme oder Ähnliches einfügen.
 
 ## 2 Planen
 
 | AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
 | ---- | ----- | --------- | ------------ | ------------- |
-| 1.A  |       |           |              |               |
-| ...  |       |           |              |               |
+| 1.A  |  29.11.2022  |    Koch      |        Button erstellen bei, um eine Karte zu ziehen.      |     45          |
+|  2.A |     29.11.2022    |     Meyer      |       Button erstellen, keine weitere Karte zu ziehen         |      45         |
+| 3.A  |    29.11.2022   |       Erismann    |     Automatische austeilung von zwei zufälligen Karten, für die  Bank und den Spieler         |       45        |
+|  4.A |   29.11.2022    |    Gilardoni       |     Gleiche Karten können gesplitet werden        |      45         |
+|  4.B |    29.11.2022   |     Gilardoni          |       Mit einem Button können gleiche Karten gesplitet werden       |         45      |
+| 5.A  |     29.11.2022    |      Grigioni     |     Mit einem Button sein Einsatz verdoppeln können.      |     45          |
+| 6.A  |  29.11.2022    |    Koch          |     Mit einem Button sein Einsatz(am Anfang vom Spiel) erhöhen kann     |      45         |
+| 6.B  |  29.11.2022     |      Koch     |     Mit einem Button sein Einsatz(am Anfang vom Spiel) veringern kann   |      45         |
+| 7.A  |  29.11.2022  |  Meyer         |      Guthaben wird angezeigt        |          45     |
+|  8.A |    29.11.2022 |   Erismann        |        Karten werden angezeigt      |        45       |
+| 9.A  |   29.11.2022   |       Gilardoni    |   Mit einem Button das Spiel verlassen           |    45           |
+| 10.A  | 29.11.2022     |      Grigioni     |  Übersichtliche Gestaltung            |        45       |
+|  11.A |     29.11.2022   |   Meyer        |     WinForms arbeiten         |        45       |
+| 12.A  |   06.12.2022     |     Koch      |         Mit einem Button die Regeln anzeigen lassen.     |    45           |
+|  13.A |    06.12.2022  |      Meyer     |     Bank zahlt automatisch das doppelte vom Einsatz, wenn der Spieler gewinnt         |     45         |
+| 14.A  |    06.12.2022   |   Erismann        |    Bank zahlt automatisch das dreichfache vom Einsatz, wenn der Spieler gewinnt und es so angeben wird          |      45         |
+|  15.A |   06.12.2022   |     Gilardoni       |     Ass ist 11 wert.         |     45          |
+|  15.A |   06.12.2022   |     Gilardoni       |     Das Ass ist 1 wert wenn sonst die Punkt zahl über 21 geht        |     45          |
+| 16.A  |   06.12.2022    |   Grigioni        |    Punktzahl durch ein Button angezeigt werden      |        45       |
+|  16.B |    06.12.2022    |    Erismann          |    Punktzahl kann wieder verschwinden wenn man auf einen Button klikt       |      45         |
+|   |       |           |              |               |
+|   |       |           |              |               |
+|   |       |           |              |               |
+|   |       |           |              |               |
+|   |       |           |              |               |
+
 
 Total: 
 
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, auf die sich das Arbeitspaket bezieht, und `m` von `A` an nach oben buchstabiert. Beispiel: Das dritte Arbeitspaket, das die zweite User Story betrifft, hat also die Nummer `2.C`.
-
-✍️ Ein Arbeitspaket sollte etwa 45' für eine Person in Anspruch nehmen. Die totale Anzahl Arbeitspakete sollte etwa Folgendem entsprechen: `Anzahl R-Sitzungen` ╳ `Anzahl Gruppenmitglieder` ╳ `4`. Wenn Sie also zu dritt an einem Projekt arbeiten, für welches zwei R-Sitzungen geplant sind, sollten Sie auf `2` ╳ `3` ╳`4` = `24` Arbeitspakete kommen. Sollten Sie merken, dass Sie hier nicht genügend Arbeitspakte haben, denken Sie sich weitere "Kann"-User Stories für Kapitel 1.2 aus.
-
 ## 3 Entscheiden
-
-✍️ Dokumentieren Sie hier Ihre Entscheidungen und Annahmen, die Sie im Bezug auf Ihre User Stories und die Implementierung getroffen haben.
 
 ## 4 Realisieren
 
