@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nicla\\Source\\Repos\\LA1300-Peanut\\LA1300-Penut.csproj": {}
+    "C:\\Users\\nicla\\source\\repos\\LA1300-Peanut\\LA1300-Penut.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nicla\\Source\\Repos\\LA1300-Peanut\\LA1300-Penut.csproj": {
+    "C:\\Users\\nicla\\source\\repos\\LA1300-Peanut\\LA1300-Penut.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nicla\\Source\\Repos\\LA1300-Peanut\\LA1300-Penut.csproj",
+        "projectUniqueName": "C:\\Users\\nicla\\source\\repos\\LA1300-Peanut\\LA1300-Penut.csproj",
         "projectName": "LA1300-Penut",
-        "projectPath": "C:\\Users\\nicla\\Source\\Repos\\LA1300-Peanut\\LA1300-Penut.csproj",
+        "projectPath": "C:\\Users\\nicla\\source\\repos\\LA1300-Peanut\\LA1300-Penut.csproj",
         "packagesPath": "C:\\Users\\nicla\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nicla\\Source\\Repos\\LA1300-Peanut\\obj\\",
+        "outputPath": "C:\\Users\\nicla\\source\\repos\\LA1300-Peanut\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
