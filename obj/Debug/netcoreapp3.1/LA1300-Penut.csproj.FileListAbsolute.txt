@@ -1,0 +1,17 @@
+C:\Users\nicla\Source\Repos\LA1300-Peanut\bin\Debug\netcoreapp3.1\LA1300-Penut.exe
+C:\Users\nicla\Source\Repos\LA1300-Peanut\bin\Debug\netcoreapp3.1\LA1300-Penut.deps.json
+C:\Users\nicla\Source\Repos\LA1300-Peanut\bin\Debug\netcoreapp3.1\LA1300-Penut.runtimeconfig.json
+C:\Users\nicla\Source\Repos\LA1300-Peanut\bin\Debug\netcoreapp3.1\LA1300-Penut.runtimeconfig.dev.json
+C:\Users\nicla\Source\Repos\LA1300-Peanut\bin\Debug\netcoreapp3.1\LA1300-Penut.dll
+C:\Users\nicla\Source\Repos\LA1300-Peanut\bin\Debug\netcoreapp3.1\LA1300-Penut.pdb
+C:\Users\nicla\Source\Repos\LA1300-Peanut\obj\Debug\netcoreapp3.1\LA1300-Penut.csproj.AssemblyReference.cache
+C:\Users\nicla\Source\Repos\LA1300-Peanut\obj\Debug\netcoreapp3.1\LA1300_Penut.Form1.resources
+C:\Users\nicla\Source\Repos\LA1300-Peanut\obj\Debug\netcoreapp3.1\LA1300_Penut.Properties.Resources.resources
+C:\Users\nicla\Source\Repos\LA1300-Peanut\obj\Debug\netcoreapp3.1\LA1300-Penut.csproj.GenerateResource.cache
+C:\Users\nicla\Source\Repos\LA1300-Peanut\obj\Debug\netcoreapp3.1\LA1300-Penut.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicla\Source\Repos\LA1300-Peanut\obj\Debug\netcoreapp3.1\LA1300-Penut.AssemblyInfoInputs.cache
+C:\Users\nicla\Source\Repos\LA1300-Peanut\obj\Debug\netcoreapp3.1\LA1300-Penut.AssemblyInfo.cs
+C:\Users\nicla\Source\Repos\LA1300-Peanut\obj\Debug\netcoreapp3.1\LA1300-Penut.csproj.CoreCompileInputs.cache
+C:\Users\nicla\Source\Repos\LA1300-Peanut\obj\Debug\netcoreapp3.1\LA1300-Penut.dll
+C:\Users\nicla\Source\Repos\LA1300-Peanut\obj\Debug\netcoreapp3.1\LA1300-Penut.pdb
+C:\Users\nicla\Source\Repos\LA1300-Peanut\obj\Debug\netcoreapp3.1\LA1300-Penut.genruntimeconfig.cache
