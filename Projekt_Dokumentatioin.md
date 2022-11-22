@@ -20,36 +20,36 @@ Wir machen ein Programm mit dem man Black Jack spielen kann.
 
 | US-№ | Verbindlichkeit | Typ  | Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
-| 1    |                 |      | Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️ |
-|  2 |                 |      |                                    |
-|  3 |                 |      |                                    |
-|  4 |                 |      |                                    |
-| 5  |                 |      |                                    |
-| 6  |                 |      |                                    |
-| 7  |                 |      |                                    |
-|  8 |                 |      |                                    |
-| 9  |                 |      |                                    |
-|  10 |                 |      |                                    |
-|   11|                 |      |                                    |
-|  12 |                 |      |                                    |
-|  13 |                 |      |                                    |
-|  14 |                 |      |                                    |
-|  15 |                 |      |                                    |
-|  16 |                 |      |                                    |
-|  17 |                 |      |                                    |
-|  18 |                 |      |                                    |
-|  19 |                 |      |                                    |
-|  20 |                 |      |                                    |
-|  21 |                 |      |                                    |
-|  22 |                 |      |                                    |
-|  23 |                 |      |                                    |
-|  24 |                 |      |                                    |
-| 25  |                 |      |                                    |
-| 26  |                 |      |                                    |
-| 27  |                 |      |                                    |
-| 28  |                 |      |                                    |
-|  29 |                 |      |                                    |
-|  30 |                 |      |                                    |
+| 1  |    Muss         | Funktional | Als Spieler möchte ich Eine Karte ziehen können. um einen höheren Kartenwert zu haben. |
+| 2  |    Muss         | Funktional | Als Spieler möchte ich meine Karten behalten können, um meinen Kartenwert nicht über 21 zu bringen. |
+| 3  |    Muss         | Funktional | Als Bank möchte ich ich zu beginn dem Spieler und mir jeweils 2 karten austeilen, um das spiel zu starten. |
+| 4  |    Kann         | Funktional | Als Spieler möchte ich meine 2 Karten spliten können wenn sie di gleichen karten sind, um meine chance zum gewinn zu erhöhen. |
+| 5  |    Muss         | Funktional | Als Spieler möchte ich meinen Einsatz verdoppeln können um meinen gewinn zu steigern wenn ich mich sicher fühle.|
+| 6  |    Kann         | Funktional | Als Spieler möchte ich vor jeder Runde meine Einsatz erhöhen/senken können, damit ich mehr Geld Sparen kann |
+| 7  |    Muss         | Funktional | Als Spieler möchte ich Mein Guthaben sehen können, um meine Einsätze besser abschätzen zu können |
+| 8  |    Muss         | Funktional | Als Spieler möchte icch Meine Karten sehen, um das Spiel spielen zu können. |
+| 9  |    Muss         | Funktional | Als Spieler möchte ich das Spiel jederzeit verlassen können, um aufzuhören.|
+| 10 |    Kann         | Qualität   | Als Nutzer möchte ich ein übersichtliches Programm, um besser Spieler zu können. |
+| 11 |    Kann         | Rand       | Als Programmierer möchte ich mit WinForms arbeiten, da dies vorgegeben ist.|
+| 12 |    Muss         | Qualität   | Als Spieler möchte ich mir die Regeln anzeigen lassen lönnen, um das Spiel zu vertsehen. 
+| 13 |    Muss         | Funktional | Als Bank möchte ich bei gewinnen den doppelten einzatz auszahlen.|
+| 14 |    Muss         | Funktional | Als Bank möchte ich bei BlackJack den Dreifachen einzatz auszahlen. |
+| 15 |    Muss         | Funktional | Ein Ass soll Nur dann 11 Punkte Wert sein wenn dies nicht dazu führt dass der spieler über 21 kommt, ansonsten soll es 1 punkt wert sein|
+| 16 |                 |      |                                    |
+| 17 |                 |      |                                    |
+| 18 |                 |      |                                    |
+| 19 |                 |      |                                    |
+| 20 |                 |      |                                    |
+| 21 |                 |      |                                    |
+| 22 |                 |      |                                    |
+| 23 |                 |      |                                    |
+| 24 |                 |      |                                    |
+| 25 |                 |      |                                    |
+| 26 |                 |      |                                    |
+| 27 |                 |      |                                    |
+| 28 |                 |      |                                    |
+| 29 |                 |      |                                    |
+| 30 |                 |      |                                    |
 
 
 ✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: *Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️*.
