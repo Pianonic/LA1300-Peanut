@@ -14,7 +14,7 @@ https://www.besteonlinecasinos.co/blackjack/regeln/
 
 ### 1.1 Ihr Projekt
 
-✍️ Beschreiben Sie Ihr Projekt in einem griffigen Satz.
+Wir machen ein Programm mit dem man Black Jack spielen kann.
 
 ### 1.2 User Stories
 
