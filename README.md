@@ -10,6 +10,7 @@
 |       | 1.0.0   |                                                              |
 
 ## 1 Informieren
+https://www.besteonlinecasinos.co/blackjack/regeln/
 
 ### 1.1 Ihr Projekt
 
