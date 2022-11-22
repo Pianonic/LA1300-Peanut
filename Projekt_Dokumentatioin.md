@@ -51,7 +51,7 @@ Wir machen ein Programm mit dem man Black Jack spielen kann.
 
 ### 1.4 Diagramme
 
-![image](https://user-images.githubusercontent.com/110892739/203288850-ba47474b-04aa-4c5c-99eb-4bd1bd0eebfa.png)
+![image](https://user-images.githubusercontent.com/110892739/203289016-a6374390-303c-4034-a528-f1b291726765.png)
 
 ## 2 Planen
 
