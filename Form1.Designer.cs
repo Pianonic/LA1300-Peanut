@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -41,7 +43,6 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -57,6 +58,18 @@
             this.panel1.Size = new System.Drawing.Size(769, 81);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.SaddleBrown;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(23, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(130, 54);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "label1";
             // 
             // panel2
             // 
@@ -111,20 +124,36 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(64, 102);
+            this.label3.BackColor = System.Drawing.Color.SaddleBrown;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(51, 102);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 25);
+            this.label3.Size = new System.Drawing.Size(60, 32);
             this.label3.TabIndex = 1;
             this.label3.Text = "Zahl";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.SaddleBrown;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.SystemColors.Control;
+            this.label4.Location = new System.Drawing.Point(1790, 522);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(77, 32);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Wette";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.Control;
+            this.label2.BackColor = System.Drawing.Color.SaddleBrown;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
             this.label2.Location = new System.Drawing.Point(51, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 25);
+            this.label2.Size = new System.Drawing.Size(77, 32);
             this.label2.TabIndex = 0;
             this.label2.Text = "Wette";
             // 
@@ -203,15 +232,6 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -222,6 +242,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -231,6 +252,7 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -250,5 +272,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
     }
 }
