@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.GuthabenZahl = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.WenigerWetten = new System.Windows.Forms.Button();
+            this.MehrWetten = new System.Windows.Forms.Button();
+            this.WetteZahl = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -52,33 +53,32 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.panel1.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.GuthabenZahl);
             this.panel1.Location = new System.Drawing.Point(361, 17);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(769, 81);
             this.panel1.TabIndex = 0;
-            //this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // label1
+            // GuthabenZahl
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(23, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(198, 54);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Guthaben";
+            this.GuthabenZahl.AutoSize = true;
+            this.GuthabenZahl.BackColor = System.Drawing.Color.SaddleBrown;
+            this.GuthabenZahl.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.GuthabenZahl.ForeColor = System.Drawing.SystemColors.Control;
+            this.GuthabenZahl.Location = new System.Drawing.Point(23, 17);
+            this.GuthabenZahl.Name = "GuthabenZahl";
+            this.GuthabenZahl.Size = new System.Drawing.Size(324, 54);
+            this.GuthabenZahl.TabIndex = 0;
+            this.GuthabenZahl.Text = "Guthaben: 0 CHF";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.panel2.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
             this.panel2.Controls.Add(this.button8);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.WenigerWetten);
+            this.panel2.Controls.Add(this.MehrWetten);
+            this.panel2.Controls.Add(this.WetteZahl);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(12, 143);
             this.panel2.Name = "panel2";
@@ -97,41 +97,43 @@
             this.button8.Text = "Setzen";
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // WenigerWetten
             // 
-            this.button2.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(26, 144);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 34);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "-";
-            this.button2.UseVisualStyleBackColor = true;
+            this.WenigerWetten.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
+            this.WenigerWetten.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.WenigerWetten.ForeColor = System.Drawing.SystemColors.Control;
+            this.WenigerWetten.Location = new System.Drawing.Point(26, 144);
+            this.WenigerWetten.Name = "WenigerWetten";
+            this.WenigerWetten.Size = new System.Drawing.Size(112, 34);
+            this.WenigerWetten.TabIndex = 3;
+            this.WenigerWetten.Text = "-";
+            this.WenigerWetten.UseVisualStyleBackColor = true;
+            this.WenigerWetten.Click += new System.EventHandler(this.WenigerWetten_Click);
             // 
-            // button1
+            // MehrWetten
             // 
-            this.button1.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(26, 56);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 34);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = true;
+            this.MehrWetten.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
+            this.MehrWetten.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MehrWetten.ForeColor = System.Drawing.SystemColors.Control;
+            this.MehrWetten.Location = new System.Drawing.Point(26, 56);
+            this.MehrWetten.Name = "MehrWetten";
+            this.MehrWetten.Size = new System.Drawing.Size(112, 34);
+            this.MehrWetten.TabIndex = 2;
+            this.MehrWetten.Text = "+";
+            this.MehrWetten.UseVisualStyleBackColor = true;
+            this.MehrWetten.Click += new System.EventHandler(this.MehrWetten_Click);
             // 
-            // label3
+            // WetteZahl
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.SaddleBrown;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(51, 102);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 32);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Zahl";
+            this.WetteZahl.AutoSize = true;
+            this.WetteZahl.BackColor = System.Drawing.Color.SaddleBrown;
+            this.WetteZahl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.WetteZahl.ForeColor = System.Drawing.SystemColors.Control;
+            this.WetteZahl.Location = new System.Drawing.Point(51, 102);
+            this.WetteZahl.Name = "WetteZahl";
+            this.WetteZahl.Size = new System.Drawing.Size(78, 32);
+            this.WetteZahl.TabIndex = 1;
+            this.WetteZahl.Text = "0 CHF";
             // 
             // label2
             // 
@@ -157,6 +159,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Leave";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // panel3
             // 
@@ -182,7 +185,7 @@
             this.button7.TabIndex = 3;
             this.button7.Text = "+ Karte";
             this.button7.UseVisualStyleBackColor = true;
-            //this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -219,7 +222,6 @@
             this.button4.TabIndex = 0;
             this.button4.Text = "Double";
             this.button4.UseVisualStyleBackColor = true;
-            //this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button9
             // 
@@ -245,9 +247,10 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
-            //this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "Black Jack";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -261,9 +264,9 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button WenigerWetten;
+        private System.Windows.Forms.Button MehrWetten;
+        private System.Windows.Forms.Label WetteZahl;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel3;
@@ -272,7 +275,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label GuthabenZahl;
         private System.Windows.Forms.Button button9;
     }
 }

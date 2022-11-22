@@ -16,5 +16,35 @@ namespace LA1300_Penut
         {
             InitializeComponent();
         }
+
+        int Wette = 0;
+        int Count = 1000;
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Count++;
+            GuthabenZahl.Text = $"Guthaben: {Count} CHF";
+        }
+
+        private void MehrWetten_Click(object sender, EventArgs e)
+        {
+            Wette++;
+            WetteZahl.Text = Convert.ToString(Wette);
+        }
+        private void WenigerWetten_Click(object sender, EventArgs e)
+        {
+            Wette++;
+            WetteZahl.Text = Convert.ToString(Wette);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
