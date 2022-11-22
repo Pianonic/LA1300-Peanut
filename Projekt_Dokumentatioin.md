@@ -51,7 +51,7 @@ Wir machen ein Programm mit dem man Black Jack spielen kann.
 
 ### 1.4 Diagramme
 
-✍️ Hier können Sie PAPs, Use Case- und Gantt-Diagramme oder Ähnliches einfügen.
+![image](https://user-images.githubusercontent.com/110892739/203288429-863ae04b-8220-469c-88d3-69fd33c462d1.png)
 
 ## 2 Planen
 
