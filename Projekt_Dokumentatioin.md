@@ -35,21 +35,7 @@ Wir machen ein Programm mit dem man Black Jack spielen kann.
 | 13 |    Muss         | Funktional | Als Bank möchte ich bei gewinnen den doppelten einzatz auszahlen.|
 | 14 |    Muss         | Funktional | Als Bank möchte ich bei BlackJack den Dreifachen einzatz auszahlen. |
 | 15 |    Muss         | Funktional | Ein Ass soll Nur dann 11 Punkte Wert sein wenn dies nicht dazu führt dass der spieler über 21 kommt, ansonsten soll es 1 punkt wert sein|
-| 16 |                 |      |                                    |
-| 17 |                 |      |                                    |
-| 18 |                 |      |                                    |
-| 19 |                 |      |                                    |
-| 20 |                 |      |                                    |
-| 21 |                 |      |                                    |
-| 22 |                 |      |                                    |
-| 23 |                 |      |                                    |
-| 24 |                 |      |                                    |
-| 25 |                 |      |                                    |
-| 26 |                 |      |                                    |
-| 27 |                 |      |                                    |
-| 28 |                 |      |                                    |
-| 29 |                 |      |                                    |
-| 30 |                 |      |                                    |
+
 
 
 ✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: *Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️*.
