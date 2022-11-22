@@ -31,11 +31,11 @@ Wir machen ein Programm mit dem man Black Jack spielen kann.
 | 9  |    Muss         | Funktional | Als Spieler möchte ich das Spiel jederzeit verlassen können, um aufzuhören.|
 | 10 |    Kann         | Qualität   | Als Nutzer möchte ich ein übersichtliches Programm, um besser Spieler zu können. |
 | 11 |    Kann         | Rand       | Als Programmierer möchte ich mit WinForms arbeiten, da dies vorgegeben ist.|
-| 12 |    Muss         | Qualität   | Als Spieler möchte ich mir die Regeln anzeigen lassen lönnen, um das Spiel zu vertsehen. 
+| 12 |    Muss         | Qualität   | Als Spieler möchte ich mir die Regeln anzeigen lassen können, um das Spiel zu vertsehen. |
 | 13 |    Muss         | Funktional | Als Bank möchte ich bei gewinnen den doppelten einzatz auszahlen.|
 | 14 |    Muss         | Funktional | Als Bank möchte ich bei BlackJack den Dreifachen einzatz auszahlen. |
 | 15 |    Muss         | Funktional | Ein Ass soll Nur dann 11 Punkte Wert sein wenn dies nicht dazu führt dass der spieler über 21 kommt, ansonsten soll es 1 punkt wert sein|
-
+| 16 |    Muss         | Funktional | Als Spieler möchte ich die Option haben meine Punktzahlanzeige ein- und auszuschalten. | 
 
 
 ✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: *Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️*.
