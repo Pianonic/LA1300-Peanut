@@ -84,7 +84,7 @@ Wir machen ein Programm mit dem man Black Jack spielen kann.
 |   |       |           |              |               |
 
 
-Total: 
+Total: 900 min.
 
 ## 3 Entscheiden
 
