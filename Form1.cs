@@ -50,5 +50,14 @@ namespace LA1300_Penut
             label2.BackColor = System.Drawing.Color.Transparent;
         }
 
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
