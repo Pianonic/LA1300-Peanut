@@ -44,10 +44,33 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.K1 = new System.Windows.Forms.PictureBox();
+            this.K2 = new System.Windows.Forms.PictureBox();
+            this.K4 = new System.Windows.Forms.PictureBox();
+            this.K3 = new System.Windows.Forms.PictureBox();
+            this.K5 = new System.Windows.Forms.PictureBox();
+            this.K6 = new System.Windows.Forms.PictureBox();
+            this.K12 = new System.Windows.Forms.PictureBox();
+            this.K11 = new System.Windows.Forms.PictureBox();
+            this.K10 = new System.Windows.Forms.PictureBox();
+            this.K9 = new System.Windows.Forms.PictureBox();
+            this.K8 = new System.Windows.Forms.PictureBox();
+            this.K7 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.K1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.K2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.K4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.K3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.K5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.K6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.K12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.K11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.K10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.K9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.K8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.K7)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -55,22 +78,15 @@
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.panel1.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
             this.panel1.Controls.Add(this.GuthabenZahl);
-            this.panel1.Location = new System.Drawing.Point(361, 17);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(769, 81);
-            this.panel1.TabIndex = 0;
             // 
             // GuthabenZahl
             // 
-            this.GuthabenZahl.AutoSize = true;
+            resources.ApplyResources(this.GuthabenZahl, "GuthabenZahl");
             this.GuthabenZahl.BackColor = System.Drawing.Color.SaddleBrown;
-            this.GuthabenZahl.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.GuthabenZahl.ForeColor = System.Drawing.SystemColors.Control;
-            this.GuthabenZahl.Location = new System.Drawing.Point(23, 17);
             this.GuthabenZahl.Name = "GuthabenZahl";
-            this.GuthabenZahl.Size = new System.Drawing.Size(324, 54);
-            this.GuthabenZahl.TabIndex = 0;
-            this.GuthabenZahl.Text = "Guthaben: 0 CHF";
             // 
             // panel2
             // 
@@ -81,84 +97,57 @@
             this.panel2.Controls.Add(this.MehrWetten);
             this.panel2.Controls.Add(this.WetteZahl);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(12, 143);
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(163, 242);
-            this.panel2.TabIndex = 1;
             // 
             // button8
             // 
             this.button8.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
-            this.button8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            resources.ApplyResources(this.button8, "button8");
             this.button8.ForeColor = System.Drawing.SystemColors.Control;
-            this.button8.Location = new System.Drawing.Point(3, 198);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(157, 41);
-            this.button8.TabIndex = 4;
-            this.button8.Text = "Setzen";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // WenigerWetten
             // 
             this.WenigerWetten.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
-            this.WenigerWetten.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            resources.ApplyResources(this.WenigerWetten, "WenigerWetten");
             this.WenigerWetten.ForeColor = System.Drawing.SystemColors.Control;
-            this.WenigerWetten.Location = new System.Drawing.Point(26, 144);
             this.WenigerWetten.Name = "WenigerWetten";
-            this.WenigerWetten.Size = new System.Drawing.Size(112, 34);
-            this.WenigerWetten.TabIndex = 3;
-            this.WenigerWetten.Text = "-";
             this.WenigerWetten.UseVisualStyleBackColor = true;
             this.WenigerWetten.Click += new System.EventHandler(this.WenigerWetten_Click);
             // 
             // MehrWetten
             // 
             this.MehrWetten.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
-            this.MehrWetten.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            resources.ApplyResources(this.MehrWetten, "MehrWetten");
             this.MehrWetten.ForeColor = System.Drawing.SystemColors.Control;
-            this.MehrWetten.Location = new System.Drawing.Point(26, 56);
             this.MehrWetten.Name = "MehrWetten";
-            this.MehrWetten.Size = new System.Drawing.Size(112, 34);
-            this.MehrWetten.TabIndex = 2;
-            this.MehrWetten.Text = "+";
             this.MehrWetten.UseVisualStyleBackColor = true;
             this.MehrWetten.Click += new System.EventHandler(this.MehrWetten_Click);
             // 
             // WetteZahl
             // 
-            this.WetteZahl.AutoSize = true;
+            resources.ApplyResources(this.WetteZahl, "WetteZahl");
             this.WetteZahl.BackColor = System.Drawing.Color.SaddleBrown;
-            this.WetteZahl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.WetteZahl.ForeColor = System.Drawing.SystemColors.Control;
-            this.WetteZahl.Location = new System.Drawing.Point(51, 102);
             this.WetteZahl.Name = "WetteZahl";
-            this.WetteZahl.Size = new System.Drawing.Size(78, 32);
-            this.WetteZahl.TabIndex = 1;
-            this.WetteZahl.Text = "0 CHF";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
+            resources.ApplyResources(this.label2, "label2");
             this.label2.BackColor = System.Drawing.Color.SaddleBrown;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(51, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 32);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Wette";
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.button3.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            resources.ApplyResources(this.button3, "button3");
             this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(1367, 143);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(188, 90);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Leave";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -170,104 +159,166 @@
             this.panel3.Controls.Add(this.button6);
             this.panel3.Controls.Add(this.button5);
             this.panel3.Controls.Add(this.button4);
-            this.panel3.Location = new System.Drawing.Point(272, 601);
+            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1005, 176);
-            this.panel3.TabIndex = 3;
             // 
             // button7
             // 
             this.button7.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            resources.ApplyResources(this.button7, "button7");
             this.button7.ForeColor = System.Drawing.SystemColors.Control;
-            this.button7.Location = new System.Drawing.Point(777, 29);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(174, 117);
-            this.button7.TabIndex = 3;
-            this.button7.Text = "+ Karte";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
             this.button6.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            resources.ApplyResources(this.button6, "button6");
             this.button6.ForeColor = System.Drawing.SystemColors.Control;
-            this.button6.Location = new System.Drawing.Point(534, 29);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(138, 117);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "Stay";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
             this.button5.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            resources.ApplyResources(this.button5, "button5");
             this.button5.ForeColor = System.Drawing.SystemColors.Control;
-            this.button5.Location = new System.Drawing.Point(289, 29);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(143, 117);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Split";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
             this.button4.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            resources.ApplyResources(this.button4, "button4");
             this.button4.ForeColor = System.Drawing.SystemColors.Control;
-            this.button4.Location = new System.Drawing.Point(47, 29);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(162, 117);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Double";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button9
             // 
             this.button9.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.button9.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
-            this.button9.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            resources.ApplyResources(this.button9, "button9");
             this.button9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button9.Location = new System.Drawing.Point(1367, 251);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(188, 90);
-            this.button9.TabIndex = 4;
-            this.button9.Text = "Anleitung";
             this.button9.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // K1
             // 
-            this.button1.BackgroundImage = global::LA1300_Penut.Properties.Resources.Background;
-            this.button1.Location = new System.Drawing.Point(245, 137);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(236, 328);
-            this.button1.TabIndex = 5;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            resources.ApplyResources(this.K1, "K1");
+            this.K1.Name = "K1";
+            this.K1.TabStop = false;
+            // 
+            // K2
+            // 
+            resources.ApplyResources(this.K2, "K2");
+            this.K2.Name = "K2";
+            this.K2.TabStop = false;
+            // 
+            // K4
+            // 
+            resources.ApplyResources(this.K4, "K4");
+            this.K4.Name = "K4";
+            this.K4.TabStop = false;
+            // 
+            // K3
+            // 
+            resources.ApplyResources(this.K3, "K3");
+            this.K3.Name = "K3";
+            this.K3.TabStop = false;
+            // 
+            // K5
+            // 
+            resources.ApplyResources(this.K5, "K5");
+            this.K5.Name = "K5";
+            this.K5.TabStop = false;
+            // 
+            // K6
+            // 
+            resources.ApplyResources(this.K6, "K6");
+            this.K6.Name = "K6";
+            this.K6.TabStop = false;
+            // 
+            // K12
+            // 
+            resources.ApplyResources(this.K12, "K12");
+            this.K12.Name = "K12";
+            this.K12.TabStop = false;
+            // 
+            // K11
+            // 
+            resources.ApplyResources(this.K11, "K11");
+            this.K11.Name = "K11";
+            this.K11.TabStop = false;
+            // 
+            // K10
+            // 
+            resources.ApplyResources(this.K10, "K10");
+            this.K10.Name = "K10";
+            this.K10.TabStop = false;
+            // 
+            // K9
+            // 
+            resources.ApplyResources(this.K9, "K9");
+            this.K9.Name = "K9";
+            this.K9.TabStop = false;
+            // 
+            // K8
+            // 
+            resources.ApplyResources(this.K8, "K8");
+            this.K8.Name = "K8";
+            this.K8.TabStop = false;
+            // 
+            // K7
+            // 
+            resources.ApplyResources(this.K7, "K7");
+            this.K7.Name = "K7";
+            this.K7.TabStop = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LA1300_Penut.Properties.Resources.Billiard;
-            this.ClientSize = new System.Drawing.Size(1567, 827);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.K12);
+            this.Controls.Add(this.K11);
+            this.Controls.Add(this.K10);
+            this.Controls.Add(this.K9);
+            this.Controls.Add(this.K8);
+            this.Controls.Add(this.K7);
+            this.Controls.Add(this.K6);
+            this.Controls.Add(this.K5);
+            this.Controls.Add(this.K4);
+            this.Controls.Add(this.K3);
+            this.Controls.Add(this.K2);
+            this.Controls.Add(this.K1);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Black Jack";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.K1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.K2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.K4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.K3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.K5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.K6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.K12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.K11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.K10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.K9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.K8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.K7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -289,6 +340,17 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label GuthabenZahl;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox K1;
+        private System.Windows.Forms.PictureBox K2;
+        private System.Windows.Forms.PictureBox K4;
+        private System.Windows.Forms.PictureBox K3;
+        private System.Windows.Forms.PictureBox K5;
+        private System.Windows.Forms.PictureBox K6;
+        private System.Windows.Forms.PictureBox K12;
+        private System.Windows.Forms.PictureBox K11;
+        private System.Windows.Forms.PictureBox K10;
+        private System.Windows.Forms.PictureBox K9;
+        private System.Windows.Forms.PictureBox K8;
+        private System.Windows.Forms.PictureBox K7;
     }
 }

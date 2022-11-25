@@ -15,3 +15,6 @@ C:\Users\nicla\Source\Repos\LA1300-Peanut\obj\Debug\netcoreapp3.1\LA1300-Penut.c
 C:\Users\nicla\Source\Repos\LA1300-Peanut\obj\Debug\netcoreapp3.1\LA1300-Penut.dll
 C:\Users\nicla\Source\Repos\LA1300-Peanut\obj\Debug\netcoreapp3.1\LA1300-Penut.pdb
 C:\Users\nicla\Source\Repos\LA1300-Peanut\obj\Debug\netcoreapp3.1\LA1300-Penut.genruntimeconfig.cache
+C:\Users\nicla\source\repos\LA1300-Peanut\bin\Debug\netcoreapp3.1\de-CH\LA1300-Penut.resources.dll
+C:\Users\nicla\source\repos\LA1300-Peanut\obj\Debug\netcoreapp3.1\LA1300_Penut.Form1.de-CH.resources
+C:\Users\nicla\source\repos\LA1300-Peanut\obj\Debug\netcoreapp3.1\de-CH\LA1300-Penut.resources.dll
