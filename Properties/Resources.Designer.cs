@@ -63,9 +63,9 @@ namespace LA1300_Penut.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Background {
+        internal static System.Drawing.Bitmap Billiard {
             get {
-                object obj = ResourceManager.GetObject("Background", resourceCulture);
+                object obj = ResourceManager.GetObject("Billiard", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace LA1300_Penut.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Billiard {
+        internal static System.Drawing.Bitmap CardBackground {
             get {
-                object obj = ResourceManager.GetObject("Billiard", resourceCulture);
+                object obj = ResourceManager.GetObject("CardBackground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

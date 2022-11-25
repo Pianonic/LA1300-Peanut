@@ -1,0 +1,28 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "LA1300-Penut/1.0.0": {
+        "runtime": {
+          "LA1300-Penut.dll": {}
+        },
+        "resources": {
+          "de-CH/LA1300-Penut.resources.dll": {
+            "locale": "de-CH"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LA1300-Penut/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -206,72 +206,84 @@
             // 
             // K1
             // 
+            this.K1.Image = global::LA1300_Penut.Properties.Resources.CardBackground;
             resources.ApplyResources(this.K1, "K1");
             this.K1.Name = "K1";
             this.K1.TabStop = false;
             // 
             // K2
             // 
+            this.K2.Image = global::LA1300_Penut.Properties.Resources.CardBackground;
             resources.ApplyResources(this.K2, "K2");
             this.K2.Name = "K2";
             this.K2.TabStop = false;
             // 
             // K4
             // 
+            this.K4.Image = global::LA1300_Penut.Properties.Resources.CardBackground;
             resources.ApplyResources(this.K4, "K4");
             this.K4.Name = "K4";
             this.K4.TabStop = false;
             // 
             // K3
             // 
+            this.K3.Image = global::LA1300_Penut.Properties.Resources.CardBackground;
             resources.ApplyResources(this.K3, "K3");
             this.K3.Name = "K3";
             this.K3.TabStop = false;
             // 
             // K5
             // 
+            this.K5.Image = global::LA1300_Penut.Properties.Resources.CardBackground;
             resources.ApplyResources(this.K5, "K5");
             this.K5.Name = "K5";
             this.K5.TabStop = false;
             // 
             // K6
             // 
+            this.K6.Image = global::LA1300_Penut.Properties.Resources.CardBackground;
             resources.ApplyResources(this.K6, "K6");
             this.K6.Name = "K6";
             this.K6.TabStop = false;
             // 
             // K12
             // 
+            this.K12.Image = global::LA1300_Penut.Properties.Resources.CardBackground;
             resources.ApplyResources(this.K12, "K12");
             this.K12.Name = "K12";
             this.K12.TabStop = false;
             // 
             // K11
             // 
+            this.K11.Image = global::LA1300_Penut.Properties.Resources.CardBackground;
             resources.ApplyResources(this.K11, "K11");
             this.K11.Name = "K11";
             this.K11.TabStop = false;
             // 
             // K10
             // 
+            this.K10.Image = global::LA1300_Penut.Properties.Resources.CardBackground;
             resources.ApplyResources(this.K10, "K10");
             this.K10.Name = "K10";
             this.K10.TabStop = false;
             // 
             // K9
             // 
+            this.K9.Image = global::LA1300_Penut.Properties.Resources.CardBackground;
             resources.ApplyResources(this.K9, "K9");
             this.K9.Name = "K9";
             this.K9.TabStop = false;
             // 
             // K8
             // 
+            this.K8.Image = global::LA1300_Penut.Properties.Resources.CardBackground;
             resources.ApplyResources(this.K8, "K8");
             this.K8.Name = "K8";
             this.K8.TabStop = false;
             // 
             // K7
             // 
+            this.K7.Image = global::LA1300_Penut.Properties.Resources.CardBackground;
             resources.ApplyResources(this.K7, "K7");
             this.K7.Name = "K7";
             this.K7.TabStop = false;

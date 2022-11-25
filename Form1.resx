@@ -455,13 +455,16 @@
   <data name="&gt;&gt;button9.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="K1.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="K1.Location" type="System.Drawing.Point, System.Drawing">
     <value>245, 156</value>
   </data>
   <data name="K1.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 201</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="K1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
@@ -482,6 +485,9 @@
   </data>
   <data name="K2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="K2.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="K2.Location" type="System.Drawing.Point, System.Drawing">
     <value>432, 156</value>
@@ -510,6 +516,9 @@
   <data name="K4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="K4.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="K4.Location" type="System.Drawing.Point, System.Drawing">
     <value>806, 156</value>
   </data>
@@ -536,6 +545,9 @@
   </data>
   <data name="K3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="K3.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="K3.Location" type="System.Drawing.Point, System.Drawing">
     <value>617, 156</value>
@@ -564,6 +576,9 @@
   <data name="K5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="K5.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="K5.Location" type="System.Drawing.Point, System.Drawing">
     <value>998, 156</value>
   </data>
@@ -590,6 +605,9 @@
   </data>
   <data name="K6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="K6.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="K6.Location" type="System.Drawing.Point, System.Drawing">
     <value>1185, 156</value>
@@ -618,6 +636,9 @@
   <data name="K12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="K12.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="K12.Location" type="System.Drawing.Point, System.Drawing">
     <value>1185, 375</value>
   </data>
@@ -644,6 +665,9 @@
   </data>
   <data name="K11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="K11.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="K11.Location" type="System.Drawing.Point, System.Drawing">
     <value>998, 375</value>
@@ -672,6 +696,9 @@
   <data name="K10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="K10.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="K10.Location" type="System.Drawing.Point, System.Drawing">
     <value>806, 375</value>
   </data>
@@ -698,6 +725,9 @@
   </data>
   <data name="K9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="K9.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="K9.Location" type="System.Drawing.Point, System.Drawing">
     <value>617, 375</value>
@@ -726,6 +756,9 @@
   <data name="K8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="K8.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="K8.Location" type="System.Drawing.Point, System.Drawing">
     <value>432, 375</value>
   </data>
@@ -752,6 +785,9 @@
   </data>
   <data name="K7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="K7.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="K7.Location" type="System.Drawing.Point, System.Drawing">
     <value>245, 375</value>
