@@ -1,6 +1,6 @@
 # Cooles Projekt ;)
 ## Teaser
-! [Bild](https://github.com/Pianonic/LA1300-Peanut/blob/main/Teaser.png)
+! [](https://github.com/Pianonic/LA1300-Peanut/blob/main/Teaser.png)
 
 ## überslicht
 [Program.md](https://github.com/Pianonic/LA1300-Peanut/blob/main/Program.md)
