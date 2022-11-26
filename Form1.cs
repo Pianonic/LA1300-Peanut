@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -19,90 +20,150 @@ namespace LA1300_Penut
             InitializeComponent();
         }
 
-        int Wette = 0;
-        int Count = 1000;
+        int Wette = 1;
+        int Guthaben = 10;
         string currentdyrectorry = Environment.CurrentDirectory;
         string[] fileArray = Directory.GetFiles(@"C:\Users\nicla\source\repos\LA1300-Peanut\Cards\", "*.png", SearchOption.AllDirectories);
+
+        string filename = null;
+        string[] ArrayNames = new string[52];
+        int CounterCount = 0;
 
         Random rnd = new Random();
         int rndNum = 0;
         int counter = 0;
 
+        
+
         private void button7_Click(object sender, EventArgs e)
         {
+
+            
+
             if (counter == 0)
             {
                 rndNum = rnd.Next(fileArray.Length);
                 K3.Image = new Bitmap(fileArray[rndNum]);
+                textBox1.Text = ArrayNames[rndNum];
+                GuthabenZahl.Refresh();
                 counter++;
             }
             else if (counter == 1)
             {
                 rndNum = rnd.Next(fileArray.Length);
                 K4.Image = new Bitmap(fileArray[rndNum]);
+                textBox1.Text = ArrayNames[rndNum];
+                GuthabenZahl.Refresh();
                 counter++;
             }
             else if (counter == 2)
             {
                 rndNum = rnd.Next(fileArray.Length);
                 K5.Image = new Bitmap(fileArray[rndNum]);
+                textBox1.Text = ArrayNames[rndNum];
+                GuthabenZahl.Refresh();
                 counter++;
             }
             else if (counter == 3)
             {
                 rndNum = rnd.Next(fileArray.Length);
                 K6.Image = new Bitmap(fileArray[rndNum]);
+                textBox1.Text = ArrayNames[rndNum];
+                GuthabenZahl.Refresh();
                 counter++;
             }
             else if (counter == 4)
             {
                 rndNum = rnd.Next(fileArray.Length);
                 K7.Image = new Bitmap(fileArray[rndNum]);
+                textBox1.Text = ArrayNames[rndNum];
+                GuthabenZahl.Refresh();
                 counter++;
             }
             else if (counter == 5)
             {
                 rndNum = rnd.Next(fileArray.Length);
                 K8.Image = new Bitmap(fileArray[rndNum]);
+                textBox1.Text = ArrayNames[rndNum];
+                GuthabenZahl.Refresh();
                 counter++;
             }
             else if (counter == 6)
             {
                 rndNum = rnd.Next(fileArray.Length);
                 K9.Image = new Bitmap(fileArray[rndNum]);
+                textBox1.Text = ArrayNames[rndNum];
+                GuthabenZahl.Refresh();
                 counter++;
             }
             else if (counter == 7)
             {
                 rndNum = rnd.Next(fileArray.Length);
                 K10.Image = new Bitmap(fileArray[rndNum]);
+                textBox1.Text = ArrayNames[rndNum];
+                GuthabenZahl.Refresh();
                 counter++;
             }
             else if (counter == 8)
             {
                 rndNum = rnd.Next(fileArray.Length);
                 K11.Image = new Bitmap(fileArray[rndNum]);
+                textBox1.Text = ArrayNames[rndNum];
+                GuthabenZahl.Refresh();
                 counter++;
             }
             else if (counter == 9)
             {
                 rndNum = rnd.Next(fileArray.Length);
                 K12.Image = new Bitmap(fileArray[rndNum]);
+                textBox1.Text = ArrayNames[rndNum];
+                GuthabenZahl.Refresh();
                 counter++;
             }
+
         }
 
         private void MehrWetten_Click(object sender, EventArgs e)
         {
-            Wette++;
-            WetteZahl.Text = Convert.ToString(Wette) + " CHF";
-            WetteZahl.Refresh();
+            if (Wette < Guthaben)
+            {
+                Wette++;
+                WetteZahl.Text = Convert.ToString(Wette) + " CHF";
+                WetteZahl.Refresh();
+            }
+            else
+            {
+                WetteZahl.Text = "Max!";
+                WetteZahl.Refresh();
+                WetteZahl.BackColor = System.Drawing.Color.Red;
+                WetteZahl.Refresh();
+                Thread.Sleep(500);
+                WetteZahl.BackColor = System.Drawing.Color.Transparent;
+                WetteZahl.Refresh();
+                WetteZahl.Text = Convert.ToString(Wette) + " CHF";
+                WetteZahl.Refresh();
+            }
         }
         private void WenigerWetten_Click(object sender, EventArgs e)
         {
-            Wette++;
-            WetteZahl.Text = Convert.ToString(Wette);
-            WetteZahl.Refresh();
+            if (Wette > 1)
+            {
+                Wette--;
+                WetteZahl.Text = Convert.ToString(Wette) + " CHF";
+                WetteZahl.Refresh();
+            }
+            else
+            {
+                WetteZahl.Text = "Min!";
+                WetteZahl.Refresh();
+                WetteZahl.BackColor = System.Drawing.Color.Red;
+                WetteZahl.Refresh();
+                Thread.Sleep(500);
+                WetteZahl.BackColor = System.Drawing.Color.Transparent;
+                WetteZahl.Refresh();
+                WetteZahl.Text = Convert.ToString(Wette) + " CHF";
+                WetteZahl.Refresh();
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -127,25 +188,58 @@ namespace LA1300_Penut
             GuthabenZahl.BackColor = System.Drawing.Color.Transparent;
             WetteZahl.BackColor = System.Drawing.Color.Transparent;
             label2.BackColor = System.Drawing.Color.Transparent;
-            GuthabenZahl.Text = $"Guthaben: {Count} CHF";
+            GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
             GuthabenZahl.Refresh();
+            WetteZahl.Text = Convert.ToString(Wette) + " CHF";
+            WetteZahl.Refresh();
 
             rndNum = rnd.Next(fileArray.Length);
             K1.Image = new Bitmap(fileArray[rndNum]);
 
             rndNum = rnd.Next(fileArray.Length);
             K2.Image = new Bitmap(fileArray[rndNum]);
+
+            foreach (string item in fileArray)
+            {
+                // using the method
+                filename = Path.GetFileName(item);
+                ArrayNames[CounterCount] = filename;
+                CounterCount++;
+            }
+
+
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            GuthabenZahl.Text = currentdyrectorry;
+            if (Wette <= Guthaben)
+            {
+                Guthaben = Guthaben - Wette;
+                GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
+                GuthabenZahl.Refresh();
+            }
+            else
+            {
+                WetteZahl.Text = "None!";
+                WetteZahl.Refresh();
+                WetteZahl.BackColor = System.Drawing.Color.Red;
+                WetteZahl.Refresh();
+                Thread.Sleep(500);
+                WetteZahl.BackColor = System.Drawing.Color.Transparent;
+                WetteZahl.Refresh();
+                WetteZahl.Text = Convert.ToString(Wette) + " CHF";
+                WetteZahl.Refresh();
+            }
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
             MessageBoxButtons buttons = MessageBoxButtons.YesNo;
             DialogResult result = MessageBox.Show("Hallo", "Test", buttons);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
         }
     }
 }
