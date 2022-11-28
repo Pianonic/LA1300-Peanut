@@ -56,7 +56,7 @@
             this.K9 = new System.Windows.Forms.PictureBox();
             this.K8 = new System.Windows.Forms.PictureBox();
             this.K7 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.DebugText = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -292,10 +292,10 @@
             this.K7.Name = "K7";
             this.K7.TabStop = false;
             // 
-            // textBox1
+            // DebugText
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
+            resources.ApplyResources(this.DebugText, "DebugText");
+            this.DebugText.Name = "DebugText";
             // 
             // label1
             // 
@@ -308,7 +308,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LA1300_Penut.Properties.Resources.Billiard;
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.DebugText);
             this.Controls.Add(this.K12);
             this.Controls.Add(this.K11);
             this.Controls.Add(this.K10);
@@ -381,7 +381,7 @@
         private System.Windows.Forms.PictureBox K9;
         private System.Windows.Forms.PictureBox K8;
         private System.Windows.Forms.PictureBox K7;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox DebugText;
         private System.Windows.Forms.Label label1;
     }
 }

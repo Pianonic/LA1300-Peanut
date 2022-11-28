@@ -550,7 +550,7 @@
     <value />
   </data>
   <data name="K3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>617, 156</value>
+    <value>617, 158</value>
   </data>
   <data name="K3.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 199</value>
@@ -813,25 +813,25 @@
   <data name="&gt;&gt;K7.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="DebugText.Location" type="System.Drawing.Point, System.Drawing">
     <value>35, 521</value>
   </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="DebugText.Size" type="System.Drawing.Size, System.Drawing">
     <value>168, 31</value>
   </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="DebugText.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
   </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
+  <data name="&gt;&gt;DebugText.Name" xml:space="preserve">
+    <value>DebugText</value>
   </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;DebugText.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;DebugText.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;DebugText.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">

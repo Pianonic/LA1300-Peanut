@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.Design;
 
 namespace LA1300_Penut
 {
@@ -27,13 +28,54 @@ namespace LA1300_Penut
 
         string filename = null;
         string[] ArrayNames = new string[52];
+        string[] ArrayNamesFull = new string[52];
+        string[] cache = new string[2];
         int CounterCount = 0;
 
         Random rnd = new Random();
         int rndNum = 0;
         int counter = 0;
 
-        
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            GuthabenZahl.BackColor = System.Drawing.Color.Transparent;
+            WetteZahl.BackColor = System.Drawing.Color.Transparent;
+            label2.BackColor = System.Drawing.Color.Transparent;
+            GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
+            GuthabenZahl.Refresh();
+            WetteZahl.Text = Convert.ToString(Wette) + " CHF";
+            WetteZahl.Refresh();
+
+            rndNum = rnd.Next(fileArray.Length);
+            K1.Image = new Bitmap(fileArray[rndNum]);
+
+            rndNum = rnd.Next(fileArray.Length);
+            K2.Image = new Bitmap(fileArray[rndNum]);
+
+
+            foreach (string item in fileArray)
+            {
+                // using the method
+                filename = Path.GetFileName(item);
+                ArrayNames[CounterCount] = filename;
+                CounterCount++;
+            }
+
+            foreach (string s in ArrayNames)
+            {
+                cache = s.Split('_');
+                ArrayNamesFull[counter] = cache[0];
+                counter++;
+                /*counter++;
+                ArrayNamesFull[counter] = null;
+                counter++;
+                ArrayNamesFull[counter] = null;
+                counter = counter */
+
+            }
+            counter = 0;
+
+        }
 
         private void button7_Click(object sender, EventArgs e)
         {
@@ -44,7 +86,7 @@ namespace LA1300_Penut
             {
                 rndNum = rnd.Next(fileArray.Length);
                 K3.Image = new Bitmap(fileArray[rndNum]);
-                textBox1.Text = ArrayNames[rndNum];
+                DebugText.Text = ArrayNamesFull[rndNum];
                 GuthabenZahl.Refresh();
                 counter++;
             }
@@ -52,7 +94,7 @@ namespace LA1300_Penut
             {
                 rndNum = rnd.Next(fileArray.Length);
                 K4.Image = new Bitmap(fileArray[rndNum]);
-                textBox1.Text = ArrayNames[rndNum];
+                DebugText.Text = ArrayNamesFull[rndNum];
                 GuthabenZahl.Refresh();
                 counter++;
             }
@@ -60,7 +102,7 @@ namespace LA1300_Penut
             {
                 rndNum = rnd.Next(fileArray.Length);
                 K5.Image = new Bitmap(fileArray[rndNum]);
-                textBox1.Text = ArrayNames[rndNum];
+                DebugText.Text = ArrayNamesFull[rndNum];
                 GuthabenZahl.Refresh();
                 counter++;
             }
@@ -68,7 +110,7 @@ namespace LA1300_Penut
             {
                 rndNum = rnd.Next(fileArray.Length);
                 K6.Image = new Bitmap(fileArray[rndNum]);
-                textBox1.Text = ArrayNames[rndNum];
+                DebugText.Text = ArrayNamesFull[rndNum];
                 GuthabenZahl.Refresh();
                 counter++;
             }
@@ -76,7 +118,7 @@ namespace LA1300_Penut
             {
                 rndNum = rnd.Next(fileArray.Length);
                 K7.Image = new Bitmap(fileArray[rndNum]);
-                textBox1.Text = ArrayNames[rndNum];
+                DebugText.Text = ArrayNamesFull[rndNum];
                 GuthabenZahl.Refresh();
                 counter++;
             }
@@ -84,7 +126,7 @@ namespace LA1300_Penut
             {
                 rndNum = rnd.Next(fileArray.Length);
                 K8.Image = new Bitmap(fileArray[rndNum]);
-                textBox1.Text = ArrayNames[rndNum];
+                DebugText.Text = ArrayNamesFull[rndNum];
                 GuthabenZahl.Refresh();
                 counter++;
             }
@@ -92,7 +134,7 @@ namespace LA1300_Penut
             {
                 rndNum = rnd.Next(fileArray.Length);
                 K9.Image = new Bitmap(fileArray[rndNum]);
-                textBox1.Text = ArrayNames[rndNum];
+                DebugText.Text = ArrayNamesFull[rndNum];
                 GuthabenZahl.Refresh();
                 counter++;
             }
@@ -100,7 +142,7 @@ namespace LA1300_Penut
             {
                 rndNum = rnd.Next(fileArray.Length);
                 K10.Image = new Bitmap(fileArray[rndNum]);
-                textBox1.Text = ArrayNames[rndNum];
+                DebugText.Text = ArrayNamesFull[rndNum];
                 GuthabenZahl.Refresh();
                 counter++;
             }
@@ -108,7 +150,7 @@ namespace LA1300_Penut
             {
                 rndNum = rnd.Next(fileArray.Length);
                 K11.Image = new Bitmap(fileArray[rndNum]);
-                textBox1.Text = ArrayNames[rndNum];
+                DebugText.Text = ArrayNamesFull[rndNum];
                 GuthabenZahl.Refresh();
                 counter++;
             }
@@ -116,7 +158,7 @@ namespace LA1300_Penut
             {
                 rndNum = rnd.Next(fileArray.Length);
                 K12.Image = new Bitmap(fileArray[rndNum]);
-                textBox1.Text = ArrayNames[rndNum];
+                DebugText.Text = ArrayNamesFull[rndNum];
                 GuthabenZahl.Refresh();
                 counter++;
             }
@@ -183,32 +225,6 @@ namespace LA1300_Penut
             
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            GuthabenZahl.BackColor = System.Drawing.Color.Transparent;
-            WetteZahl.BackColor = System.Drawing.Color.Transparent;
-            label2.BackColor = System.Drawing.Color.Transparent;
-            GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
-            GuthabenZahl.Refresh();
-            WetteZahl.Text = Convert.ToString(Wette) + " CHF";
-            WetteZahl.Refresh();
-
-            rndNum = rnd.Next(fileArray.Length);
-            K1.Image = new Bitmap(fileArray[rndNum]);
-
-            rndNum = rnd.Next(fileArray.Length);
-            K2.Image = new Bitmap(fileArray[rndNum]);
-
-            foreach (string item in fileArray)
-            {
-                // using the method
-                filename = Path.GetFileName(item);
-                ArrayNames[CounterCount] = filename;
-                CounterCount++;
-            }
-
-
-        }
 
         private void button8_Click(object sender, EventArgs e)
         {
