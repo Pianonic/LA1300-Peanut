@@ -66,11 +66,6 @@ namespace LA1300_Penut
                 cache = s.Split('_');
                 ArrayNamesFull[counter] = cache[0];
                 counter++;
-                /*counter++;
-                ArrayNamesFull[counter] = null;
-                counter++;
-                ArrayNamesFull[counter] = null;
-                counter = counter */
 
             }
             counter = 0;
