@@ -66,7 +66,6 @@ namespace LA1300_Penut
                 cache = s.Split('_');
                 ArrayNamesFull[counter] = cache[0];
                 counter++;
-
             }
             counter = 0;
 
@@ -74,9 +73,6 @@ namespace LA1300_Penut
 
         private void button7_Click(object sender, EventArgs e)
         {
-
-            
-
             if (counter == 0)
             {
                 rndNum = rnd.Next(fileArray.Length);
@@ -157,7 +153,17 @@ namespace LA1300_Penut
                 GuthabenZahl.Refresh();
                 counter++;
             }
-
+            try
+            {
+                int CalculatePoints = Convert.ToInt32(ArrayNamesFull[rndNum]);
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                DialogResult result = MessageBox.Show("Hallo", "Worked", buttons);
+            }
+            catch
+            {
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                DialogResult result = MessageBox.Show("Hallo", "Niss Wörked", buttons);
+            }
         }
 
         private void MehrWetten_Click(object sender, EventArgs e)
