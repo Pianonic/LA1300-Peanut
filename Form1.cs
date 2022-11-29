@@ -387,7 +387,6 @@ namespace LA1300_Penut
                 Guthaben = Guthaben - Wette;
             }
         }
-    
 
     }
 }

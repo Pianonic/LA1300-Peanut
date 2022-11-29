@@ -58,6 +58,10 @@
             this.K7 = new System.Windows.Forms.PictureBox();
             this.DebugText = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -73,6 +77,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.K9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.K8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.K7)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -303,11 +309,42 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
+            // panel4
+            // 
+            this.panel4.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Controls.Add(this.label3);
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Name = "panel4";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::LA1300_Penut.Properties.Resources.CardBackground;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.BackColor = System.Drawing.Color.SaddleBrown;
+            this.label3.ForeColor = System.Drawing.SystemColors.Window;
+            this.label3.Name = "label3";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.BackColor = System.Drawing.Color.SaddleBrown;
+            this.label4.ForeColor = System.Drawing.SystemColors.Control;
+            this.label4.Name = "label4";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LA1300_Penut.Properties.Resources.Billiard;
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.DebugText);
             this.Controls.Add(this.K12);
@@ -348,6 +385,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.K9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.K8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.K7)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -384,5 +424,9 @@
         private System.Windows.Forms.PictureBox K7;
         private System.Windows.Forms.TextBox DebugText;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
