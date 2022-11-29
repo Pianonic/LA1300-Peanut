@@ -180,6 +180,7 @@
             this.button6.ForeColor = System.Drawing.SystemColors.Control;
             this.button6.Name = "button6";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 

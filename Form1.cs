@@ -31,6 +31,7 @@ namespace LA1300_Penut
         string[] ArrayNamesFull = new string[52];
         string[] cache = new string[2];
         int CounterCount = 0;
+        int Points = 0;
 
         Random rnd = new Random();
         int rndNum = 0;
@@ -45,13 +46,6 @@ namespace LA1300_Penut
             GuthabenZahl.Refresh();
             WetteZahl.Text = Convert.ToString(Wette) + " CHF";
             WetteZahl.Refresh();
-
-            rndNum = rnd.Next(fileArray.Length);
-            K1.Image = new Bitmap(fileArray[rndNum]);
-
-            rndNum = rnd.Next(fileArray.Length);
-            K2.Image = new Bitmap(fileArray[rndNum]);
-
 
             foreach (string item in fileArray)
             {
@@ -69,100 +63,163 @@ namespace LA1300_Penut
             }
             counter = 0;
 
+            rndNum = rnd.Next(fileArray.Length);
+            K1.Image = new Bitmap(fileArray[rndNum]);
+
+            try
+            {
+                Points = Points + Convert.ToInt32(ArrayNamesFull[rndNum]);
+                DebugText.Text = Convert.ToString(Points);
+                GuthabenZahl.Refresh();
+            }
+            catch
+            {
+                if (ArrayNamesFull[rndNum] == "ace")
+                {
+                    DebugText.Text = Convert.ToString("1 oder 10");
+                    GuthabenZahl.Refresh();
+                }
+                else
+                {
+                    Points = Points + 10;
+                    DebugText.Text = Convert.ToString(Points);
+                    GuthabenZahl.Refresh();
+                }
+            }
+
+            rndNum = rnd.Next(fileArray.Length);
+            K2.Image = new Bitmap(fileArray[rndNum]);
+
+            try
+            {
+                Points = Points + Convert.ToInt32(ArrayNamesFull[rndNum]);
+                DebugText.Text = Convert.ToString(Points);
+                GuthabenZahl.Refresh();
+            }
+            catch
+            {
+                if (ArrayNamesFull[rndNum] == "ace")
+                {
+                    DebugText.Text = Convert.ToString("1 oder 10");
+                    GuthabenZahl.Refresh();
+                }
+                else
+                {
+                    Points = Points + 10;
+                    DebugText.Text = Convert.ToString(Points);
+                    GuthabenZahl.Refresh();
+                }
+            }
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            if (counter == 0)
+            if (Points < 20)
             {
-                rndNum = rnd.Next(fileArray.Length);
-                K3.Image = new Bitmap(fileArray[rndNum]);
-                DebugText.Text = ArrayNamesFull[rndNum];
-                GuthabenZahl.Refresh();
-                counter++;
+                if (counter == 0)
+                {
+                    rndNum = rnd.Next(fileArray.Length);
+                    K3.Image = new Bitmap(fileArray[rndNum]);
+                    DebugText.Text = ArrayNamesFull[rndNum];
+                    GuthabenZahl.Refresh();
+                    counter++;
+                }
+                else if (counter == 1)
+                {
+                    rndNum = rnd.Next(fileArray.Length);
+                    K4.Image = new Bitmap(fileArray[rndNum]);
+                    DebugText.Text = ArrayNamesFull[rndNum];
+                    GuthabenZahl.Refresh();
+                    counter++;
+                }
+                else if (counter == 2)
+                {
+                    rndNum = rnd.Next(fileArray.Length);
+                    K5.Image = new Bitmap(fileArray[rndNum]);
+                    DebugText.Text = ArrayNamesFull[rndNum];
+                    GuthabenZahl.Refresh();
+                    counter++;
+                }
+                else if (counter == 3)
+                {
+                    rndNum = rnd.Next(fileArray.Length);
+                    K6.Image = new Bitmap(fileArray[rndNum]);
+                    DebugText.Text = ArrayNamesFull[rndNum];
+                    GuthabenZahl.Refresh();
+                    counter++;
+                }
+                else if (counter == 4)
+                {
+                    rndNum = rnd.Next(fileArray.Length);
+                    K7.Image = new Bitmap(fileArray[rndNum]);
+                    DebugText.Text = ArrayNamesFull[rndNum];
+                    GuthabenZahl.Refresh();
+                    counter++;
+                }
+                else if (counter == 5)
+                {
+                    rndNum = rnd.Next(fileArray.Length);
+                    K8.Image = new Bitmap(fileArray[rndNum]);
+                    DebugText.Text = ArrayNamesFull[rndNum];
+                    GuthabenZahl.Refresh();
+                    counter++;
+                }
+                else if (counter == 6)
+                {
+                    rndNum = rnd.Next(fileArray.Length);
+                    K9.Image = new Bitmap(fileArray[rndNum]);
+                    DebugText.Text = ArrayNamesFull[rndNum];
+                    GuthabenZahl.Refresh();
+                    counter++;
+                }
+                else if (counter == 7)
+                {
+                    rndNum = rnd.Next(fileArray.Length);
+                    K10.Image = new Bitmap(fileArray[rndNum]);
+                    DebugText.Text = ArrayNamesFull[rndNum];
+                    GuthabenZahl.Refresh();
+                    counter++;
+                }
+                else if (counter == 8)
+                {
+                    rndNum = rnd.Next(fileArray.Length);
+                    K11.Image = new Bitmap(fileArray[rndNum]);
+                    DebugText.Text = ArrayNamesFull[rndNum];
+                    GuthabenZahl.Refresh();
+                    counter++;
+                }
+                else if (counter == 9)
+                {
+                    rndNum = rnd.Next(fileArray.Length);
+                    K12.Image = new Bitmap(fileArray[rndNum]);
+                    DebugText.Text = ArrayNamesFull[rndNum];
+                    GuthabenZahl.Refresh();
+                    counter++;
+                }
+                try
+                {
+                    Points = Points + Convert.ToInt32(ArrayNamesFull[rndNum]);
+                    DebugText.Text = Convert.ToString(Points);
+                    GuthabenZahl.Refresh();
+                }
+                catch
+                {
+                    if (ArrayNamesFull[rndNum] == "ace")
+                    {
+                        DebugText.Text = Convert.ToString("1 oder 10");
+                        GuthabenZahl.Refresh();
+                    }
+                    else
+                    {
+                        Points = Points + 10;
+                        DebugText.Text = Convert.ToString(Points);
+                        GuthabenZahl.Refresh();
+                    }
+                }
             }
-            else if (counter == 1)
+            else
             {
-                rndNum = rnd.Next(fileArray.Length);
-                K4.Image = new Bitmap(fileArray[rndNum]);
-                DebugText.Text = ArrayNamesFull[rndNum];
-                GuthabenZahl.Refresh();
-                counter++;
-            }
-            else if (counter == 2)
-            {
-                rndNum = rnd.Next(fileArray.Length);
-                K5.Image = new Bitmap(fileArray[rndNum]);
-                DebugText.Text = ArrayNamesFull[rndNum];
-                GuthabenZahl.Refresh();
-                counter++;
-            }
-            else if (counter == 3)
-            {
-                rndNum = rnd.Next(fileArray.Length);
-                K6.Image = new Bitmap(fileArray[rndNum]);
-                DebugText.Text = ArrayNamesFull[rndNum];
-                GuthabenZahl.Refresh();
-                counter++;
-            }
-            else if (counter == 4)
-            {
-                rndNum = rnd.Next(fileArray.Length);
-                K7.Image = new Bitmap(fileArray[rndNum]);
-                DebugText.Text = ArrayNamesFull[rndNum];
-                GuthabenZahl.Refresh();
-                counter++;
-            }
-            else if (counter == 5)
-            {
-                rndNum = rnd.Next(fileArray.Length);
-                K8.Image = new Bitmap(fileArray[rndNum]);
-                DebugText.Text = ArrayNamesFull[rndNum];
-                GuthabenZahl.Refresh();
-                counter++;
-            }
-            else if (counter == 6)
-            {
-                rndNum = rnd.Next(fileArray.Length);
-                K9.Image = new Bitmap(fileArray[rndNum]);
-                DebugText.Text = ArrayNamesFull[rndNum];
-                GuthabenZahl.Refresh();
-                counter++;
-            }
-            else if (counter == 7)
-            {
-                rndNum = rnd.Next(fileArray.Length);
-                K10.Image = new Bitmap(fileArray[rndNum]);
-                DebugText.Text = ArrayNamesFull[rndNum];
-                GuthabenZahl.Refresh();
-                counter++;
-            }
-            else if (counter == 8)
-            {
-                rndNum = rnd.Next(fileArray.Length);
-                K11.Image = new Bitmap(fileArray[rndNum]);
-                DebugText.Text = ArrayNamesFull[rndNum];
-                GuthabenZahl.Refresh();
-                counter++;
-            }
-            else if (counter == 9)
-            {
-                rndNum = rnd.Next(fileArray.Length);
-                K12.Image = new Bitmap(fileArray[rndNum]);
-                DebugText.Text = ArrayNamesFull[rndNum];
-                GuthabenZahl.Refresh();
-                counter++;
-            }
-            try
-            {
-                int CalculatePoints = Convert.ToInt32(ArrayNamesFull[rndNum]);
-                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-                DialogResult result = MessageBox.Show("Hallo", "Worked", buttons);
-            }
-            catch
-            {
-                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-                DialogResult result = MessageBox.Show("Hallo", "Niss Wörked", buttons);
+
             }
         }
 
@@ -257,6 +314,21 @@ namespace LA1300_Penut
 
         private void button4_Click(object sender, EventArgs e)
         {
+            if (Wette <= Guthaben / 2)
+            {
+                Wette = Wette * 2;
+                button7_Click(sender, e);
+            }
+            else
+            {
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                DialogResult result = MessageBox.Show("zu", "ARM", buttons);
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
