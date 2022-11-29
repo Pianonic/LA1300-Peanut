@@ -6,7 +6,7 @@
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
 |   22.11.2022    | 0.0.1   | Wir haben heute die User Stories, die Planung und die Testfälle gemacht. |
-|       | ...     |                                                              |
+|   29.11.2022    | 0.0.2  |         Wir haben heute an den Anforderungen weitergearbeitet.                                                     |
 |       | 1.0.0   |                                                              |
 
 ## 1 Informieren
@@ -74,12 +74,12 @@ Wir machen ein Programm mit dem man Black Jack spielen kann.
 |  13.A |    06.12.2022  |      Meyer     |     Bank zahlt automatisch das doppelte vom Einsatz, wenn der Spieler gewinnt         |     45         |
 | 14.A  |    06.12.2022   |   Erismann        |    Bank zahlt automatisch das dreichfache vom Einsatz, wenn der Spieler gewinnt und es so angeben wird          |      45         |
 |  15.A |   06.12.2022   |     Gilardoni       |     Ass ist 11 wert.         |     45          |
-|  15.A |   06.12.2022   |     Gilardoni       |     Das Ass ist 1 wert wenn sonst die Punkt zahl über 21 geht        |     45          |
+|  15.b |   06.12.2022   |     Gilardoni       |     Das Ass ist 1 wert wenn sonst die Punkt zahl über 21 geht        |     45          |
 | 16.A  |   06.12.2022    |   Grigioni        |    Punktzahl durch ein Button angezeigt werden      |        45       |
 |  16.B |    06.12.2022    |    Erismann          |    Punktzahl kann wieder verschwinden wenn man auf einen Button klikt       |      45         |
 |   |       |           |              |               |
 |   |       |           |              |               |
-|   |       |           |              |               |
+|   |       |           |              |               | 4,12,13,14,15
 |   |       |           |              |               |
 |   |       |           |              |               |
 
@@ -92,8 +92,21 @@ Total: 900 min.
 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A  |       |           |               |                   |
-| ...  |       |           |               |                   |
+| 1.A  |    29.11.2022   |  Koch         |     45          |       30            |
+| 2.A  |   29.11.2022    |   Meyer        |     45           |          30          |
+| 3.A  |   29.11.2022    |   Erismann        |     45           |         30           |
+| 5.A  |  29.11.2022     |    Grigioni       |     45           |           20         |
+| 6.A  |  29.11.2022     |      Koch     |     45           |           30         |
+| 6.B  |  29.11.2022     |       Koch  |     45           |            30        |
+| 7.A  |  29.11.2022     |       Meyer   |     45           |            30        |
+| 8.A  |  29.11.2022     |    Erismann       |      45          |            30        |
+| 9.A  |  29.11.2022     |      Grigioni     |      45          |            30        |
+| 10.A  | 29.11.2022      |      Erismann     |      45          |           30         |
+| 11.A  |  29.11.2022     |     Meyer      |     45           |             30       |
+| 16.A  |   29.11.2022    |      Grigioni     |     45           |             30       |
+| 16.B  |  29.11.2022     |     Erismann      |     45           |             30       |
+
+
 
 ✍️ Tragen Sie jedes Mal, wenn Sie ein Arbeitspaket abschließen, hier ein, wie lang Sie effektiv dafür hatten.
 
