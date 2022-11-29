@@ -30,8 +30,8 @@ namespace LA1300_Penut
         string[] ArrayNames = new string[52];
         string[] ArrayNamesFull = new string[52];
         string[] cache = new string[2];
-        int CounterCount = 0;
         int Points = 0;
+        int cachePoints = 0;
 
         Random rnd = new Random();
         int rndNum = 0;
@@ -51,9 +51,10 @@ namespace LA1300_Penut
             {
                 // using the method
                 filename = Path.GetFileName(item);
-                ArrayNames[CounterCount] = filename;
-                CounterCount++;
+                ArrayNames[counter] = filename;
+                counter++;
             }
+            counter = 0;
 
             foreach (string s in ArrayNames)
             {
@@ -100,6 +101,13 @@ namespace LA1300_Penut
             {
                 if (ArrayNamesFull[rndNum] == "ace")
                 {
+                    cachePoints = Points;
+                    cachePoints = cachePoints + 10;
+                    if (cachePoints > 20)
+                    {
+                        cachePoints = cachePoints - 10;
+
+                    }
                     DebugText.Text = Convert.ToString("1 oder 10");
                     GuthabenZahl.Refresh();
                 }
@@ -321,8 +329,7 @@ namespace LA1300_Penut
             }
             else
             {
-                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-                DialogResult result = MessageBox.Show("zu", "ARM", buttons);
+                 MessageBox.Show("zu", "ARM");
             }
         }
 
