@@ -16,11 +16,7 @@ namespace LA1300_Penut
 {
     public partial class Form1 : Form
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
-
+        int AnzahlKarten = 2;
         int Wette = 1;
         int Guthaben = 10;
         string currentdyrectorry = Environment.CurrentDirectory;
@@ -36,6 +32,11 @@ namespace LA1300_Penut
         Random rnd = new Random();
         int rndNum = 0;
         int counter = 0;
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -77,14 +78,25 @@ namespace LA1300_Penut
             {
                 if (ArrayNamesFull[rndNum] == "ace")
                 {
-                    DebugText.Text = Convert.ToString("1 oder 10");
-                    GuthabenZahl.Refresh();
+                    cachePoints = Points;
+                    cachePoints = cachePoints + 10;
+                    if (cachePoints > 20)
+                    {
+                        cachePoints = 0;
+                        Points++;
+                    }
+                    else
+                    {
+                        Points = Points + 10;
+                    }
+                    DebugText.Text = Convert.ToString(Points);
+                    DebugText.Refresh();
                 }
                 else
                 {
                     Points = Points + 10;
                     DebugText.Text = Convert.ToString(Points);
-                    GuthabenZahl.Refresh();
+                    DebugText.Refresh();
                 }
             }
 
@@ -95,7 +107,7 @@ namespace LA1300_Penut
             {
                 Points = Points + Convert.ToInt32(ArrayNamesFull[rndNum]);
                 DebugText.Text = Convert.ToString(Points);
-                GuthabenZahl.Refresh();
+                DebugText.Refresh();
             }
             catch
             {
@@ -105,17 +117,21 @@ namespace LA1300_Penut
                     cachePoints = cachePoints + 10;
                     if (cachePoints > 20)
                     {
-                        cachePoints = cachePoints - 10;
-
+                        cachePoints = 0;
+                        Points++;
                     }
-                    DebugText.Text = Convert.ToString("1 oder 10");
-                    GuthabenZahl.Refresh();
+                    else
+                    {
+                        Points = Points + 10;
+                    }
+                    DebugText.Text = Convert.ToString(Points);
+                    DebugText.Refresh();
                 }
                 else
                 {
                     Points = Points + 10;
                     DebugText.Text = Convert.ToString(Points);
-                    GuthabenZahl.Refresh();
+                    DebugText.Refresh();
                 }
             }
         }
@@ -129,7 +145,7 @@ namespace LA1300_Penut
                     rndNum = rnd.Next(fileArray.Length);
                     K3.Image = new Bitmap(fileArray[rndNum]);
                     DebugText.Text = ArrayNamesFull[rndNum];
-                    GuthabenZahl.Refresh();
+                    DebugText.Refresh();
                     counter++;
                 }
                 else if (counter == 1)
@@ -137,7 +153,7 @@ namespace LA1300_Penut
                     rndNum = rnd.Next(fileArray.Length);
                     K4.Image = new Bitmap(fileArray[rndNum]);
                     DebugText.Text = ArrayNamesFull[rndNum];
-                    GuthabenZahl.Refresh();
+                    DebugText.Refresh();
                     counter++;
                 }
                 else if (counter == 2)
@@ -145,7 +161,7 @@ namespace LA1300_Penut
                     rndNum = rnd.Next(fileArray.Length);
                     K5.Image = new Bitmap(fileArray[rndNum]);
                     DebugText.Text = ArrayNamesFull[rndNum];
-                    GuthabenZahl.Refresh();
+                    DebugText.Refresh();
                     counter++;
                 }
                 else if (counter == 3)
@@ -153,7 +169,7 @@ namespace LA1300_Penut
                     rndNum = rnd.Next(fileArray.Length);
                     K6.Image = new Bitmap(fileArray[rndNum]);
                     DebugText.Text = ArrayNamesFull[rndNum];
-                    GuthabenZahl.Refresh();
+                    DebugText.Refresh();
                     counter++;
                 }
                 else if (counter == 4)
@@ -161,7 +177,7 @@ namespace LA1300_Penut
                     rndNum = rnd.Next(fileArray.Length);
                     K7.Image = new Bitmap(fileArray[rndNum]);
                     DebugText.Text = ArrayNamesFull[rndNum];
-                    GuthabenZahl.Refresh();
+                    DebugText.Refresh();
                     counter++;
                 }
                 else if (counter == 5)
@@ -169,7 +185,7 @@ namespace LA1300_Penut
                     rndNum = rnd.Next(fileArray.Length);
                     K8.Image = new Bitmap(fileArray[rndNum]);
                     DebugText.Text = ArrayNamesFull[rndNum];
-                    GuthabenZahl.Refresh();
+                    DebugText.Refresh();
                     counter++;
                 }
                 else if (counter == 6)
@@ -177,7 +193,7 @@ namespace LA1300_Penut
                     rndNum = rnd.Next(fileArray.Length);
                     K9.Image = new Bitmap(fileArray[rndNum]);
                     DebugText.Text = ArrayNamesFull[rndNum];
-                    GuthabenZahl.Refresh();
+                    DebugText.Refresh();
                     counter++;
                 }
                 else if (counter == 7)
@@ -185,7 +201,7 @@ namespace LA1300_Penut
                     rndNum = rnd.Next(fileArray.Length);
                     K10.Image = new Bitmap(fileArray[rndNum]);
                     DebugText.Text = ArrayNamesFull[rndNum];
-                    GuthabenZahl.Refresh();
+                    DebugText.Refresh();
                     counter++;
                 }
                 else if (counter == 8)
@@ -193,7 +209,7 @@ namespace LA1300_Penut
                     rndNum = rnd.Next(fileArray.Length);
                     K11.Image = new Bitmap(fileArray[rndNum]);
                     DebugText.Text = ArrayNamesFull[rndNum];
-                    GuthabenZahl.Refresh();
+                    DebugText.Refresh();
                     counter++;
                 }
                 else if (counter == 9)
@@ -201,34 +217,50 @@ namespace LA1300_Penut
                     rndNum = rnd.Next(fileArray.Length);
                     K12.Image = new Bitmap(fileArray[rndNum]);
                     DebugText.Text = ArrayNamesFull[rndNum];
-                    GuthabenZahl.Refresh();
+                    DebugText.Refresh();
                     counter++;
                 }
                 try
                 {
                     Points = Points + Convert.ToInt32(ArrayNamesFull[rndNum]);
                     DebugText.Text = Convert.ToString(Points);
-                    GuthabenZahl.Refresh();
+                    DebugText.Refresh();
                 }
                 catch
                 {
                     if (ArrayNamesFull[rndNum] == "ace")
                     {
-                        DebugText.Text = Convert.ToString("1 oder 10");
-                        GuthabenZahl.Refresh();
+                        cachePoints = Points;
+                        cachePoints = cachePoints + 10;
+                        if (cachePoints > 20)
+                        {
+                            cachePoints = 0;
+                            Points++;
+                        }
+                        else
+                        {
+                            Points = Points + 10;
+                        }
+                        DebugText.Text = Convert.ToString(Points);
+                        DebugText.Refresh();
                     }
                     else
                     {
                         Points = Points + 10;
                         DebugText.Text = Convert.ToString(Points);
-                        GuthabenZahl.Refresh();
+                        DebugText.Refresh();
                     }
                 }
             }
-            else
+            else if (Points > 20)
             {
-
+                MessageBox.Show("Verloren", "!!! DU GAGGAO !!!");
             }
+            else if (Points == 20)
+            {
+                MessageBox.Show("Gewonnen", "!!! DU GAGGAO !!!");
+            }
+
         }
 
         private void MehrWetten_Click(object sender, EventArgs e)
@@ -335,7 +367,27 @@ namespace LA1300_Penut
 
         private void button6_Click(object sender, EventArgs e)
         {
+            Points = 19;
 
+            //DEALER
+            int DealerPoints = 18;
+            //blackjack
+            if (AnzahlKarten == 2)
+            {
+                if (Points == 21)
+                {
+                    Guthaben = (2 * Guthaben + 2 * Wette + 3 * Wette) / 2;
+                }
+            }
+
+
+
+            if (Points < DealerPoints || Points > 21)
+            {
+                Guthaben = Guthaben - Wette;
+            }
         }
+    
+
     }
 }
