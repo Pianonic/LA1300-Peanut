@@ -27,7 +27,11 @@ namespace LA1300_Penut
         string[] ArrayNamesFull = new string[52];
         string[] cache = new string[2];
         int Points = 0;
+        int BankPoints = 0;
         int cachePoints = 0;
+
+        List<PictureBox> items = new List<PictureBox>();
+
 
         Random rnd = new Random();
         int rndNum = 0;
@@ -36,6 +40,22 @@ namespace LA1300_Penut
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Create_New_Card()
+        {
+            PictureBox NewCard = new PictureBox();
+            NewCard.Height = K1.Height;
+            NewCard.Width = K1.Width;
+            NewCard.BackgroundImage = K1.BackgroundImage;
+
+            int x = K1.Location.X;
+            int y = K1.Location.Y;
+
+            x = x + 1;
+            NewCard.Location = new Point(x, y); 
+
+            this.Controls.Add(NewCard);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -138,6 +158,45 @@ namespace LA1300_Penut
 
         private void button7_Click(object sender, EventArgs e)
         {
+            if (BankPoints < 20)
+            {
+                try
+                {
+                    BankPoints = BankPoints + Convert.ToInt32(ArrayNamesFull[rndNum]);
+                    DebugBank.Text = Convert.ToString(BankPoints);
+                    DebugBank.Refresh();
+                }
+                catch
+                {
+                    if (ArrayNamesFull[rndNum] == "ace")
+                    {
+                        cachePoints = BankPoints;
+                        cachePoints = cachePoints + 10;
+                        if (cachePoints > 20)
+                        {
+                            cachePoints = 0;
+                            BankPoints++;
+                        }
+                        else
+                        {
+                            BankPoints = BankPoints + 10;
+                        }
+                        DebugBank.Text = Convert.ToString(Points);
+                        DebugBank.Refresh();
+                    }
+                    else
+                    {
+                        BankPoints = BankPoints + 10;
+                        DebugBank.Text = Convert.ToString(BankPoints);
+                        DebugBank.Refresh();
+                    }
+                }
+
+                rndNum = rnd.Next(fileArray.Length);
+                BankPic.Image = new Bitmap(fileArray[rndNum]);
+                DebugText.Text = ArrayNamesFull[rndNum];
+                DebugText.Refresh();
+            }
             if (Points < 20)
             {
                 if (counter == 0)
@@ -388,5 +447,9 @@ namespace LA1300_Penut
             }
         }
 
+        private void SplitB_Click(object sender, EventArgs e)
+        {
+            //Create_New_Card();
+        }
     }
 }

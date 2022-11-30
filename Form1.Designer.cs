@@ -60,8 +60,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BankPic = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.DebugBank = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -78,7 +79,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.K8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.K7)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BankPic)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -195,6 +196,7 @@
             this.SplitB.ForeColor = System.Drawing.SystemColors.Control;
             this.SplitB.Name = "SplitB";
             this.SplitB.UseVisualStyleBackColor = true;
+            this.SplitB.Click += new System.EventHandler(this.SplitB_Click);
             // 
             // DoubleB
             // 
@@ -312,8 +314,9 @@
             // panel4
             // 
             this.panel4.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
+            this.panel4.Controls.Add(this.DebugBank);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Controls.Add(this.BankPic);
             this.panel4.Controls.Add(this.label3);
             resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
@@ -325,12 +328,12 @@
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
             this.label4.Name = "label4";
             // 
-            // pictureBox1
+            // BankPic
             // 
-            this.pictureBox1.Image = global::LA1300_Penut.Properties.Resources.CardBackground;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
+            this.BankPic.Image = global::LA1300_Penut.Properties.Resources.CardBackground;
+            resources.ApplyResources(this.BankPic, "BankPic");
+            this.BankPic.Name = "BankPic";
+            this.BankPic.TabStop = false;
             // 
             // label3
             // 
@@ -338,6 +341,13 @@
             this.label3.BackColor = System.Drawing.Color.SaddleBrown;
             this.label3.ForeColor = System.Drawing.SystemColors.Window;
             this.label3.Name = "label3";
+            // 
+            // DebugBank
+            // 
+            resources.ApplyResources(this.DebugBank, "DebugBank");
+            this.DebugBank.BackColor = System.Drawing.Color.SaddleBrown;
+            this.DebugBank.ForeColor = System.Drawing.SystemColors.Window;
+            this.DebugBank.Name = "DebugBank";
             // 
             // Form1
             // 
@@ -387,7 +397,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.K7)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BankPic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -425,8 +435,9 @@
         private System.Windows.Forms.TextBox DebugText;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox BankPic;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label DebugBank;
     }
 }
