@@ -367,7 +367,7 @@ namespace LA1300_Penut
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Points = 19;
+           
 
             //DEALER
             int DealerPoints = 18;

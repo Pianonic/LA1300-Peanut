@@ -110,31 +110,31 @@
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>19</value>
   </data>
-  <data name="button8.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="SetzenB.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
   </data>
-  <data name="button8.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="SetzenB.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 198</value>
   </data>
-  <data name="button8.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="SetzenB.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 41</value>
   </data>
-  <data name="button8.TabIndex" type="System.Int32, mscorlib">
+  <data name="SetzenB.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="button8.Text" xml:space="preserve">
+  <data name="SetzenB.Text" xml:space="preserve">
     <value>Setzen</value>
   </data>
-  <data name="&gt;&gt;button8.Name" xml:space="preserve">
-    <value>button8</value>
+  <data name="&gt;&gt;SetzenB.Name" xml:space="preserve">
+    <value>SetzenB</value>
   </data>
-  <data name="&gt;&gt;button8.Type" xml:space="preserve">
+  <data name="&gt;&gt;SetzenB.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button8.Parent" xml:space="preserve">
+  <data name="&gt;&gt;SetzenB.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="&gt;&gt;button8.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;SetzenB.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="WenigerWetten.Font" type="System.Drawing.Font, System.Drawing">
@@ -272,139 +272,139 @@
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
-  <data name="button3.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="LeaveB.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 20pt</value>
   </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="LeaveB.Location" type="System.Drawing.Point, System.Drawing">
     <value>1367, 143</value>
   </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="LeaveB.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 90</value>
   </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+  <data name="LeaveB.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="button3.Text" xml:space="preserve">
+  <data name="LeaveB.Text" xml:space="preserve">
     <value>Leave</value>
   </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
+  <data name="&gt;&gt;LeaveB.Name" xml:space="preserve">
+    <value>LeaveB</value>
   </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+  <data name="&gt;&gt;LeaveB.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;LeaveB.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;LeaveB.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
-  <data name="button7.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="AddKarteB.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 20pt</value>
   </data>
-  <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="AddKarteB.Location" type="System.Drawing.Point, System.Drawing">
     <value>777, 29</value>
   </data>
-  <data name="button7.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="AddKarteB.Size" type="System.Drawing.Size, System.Drawing">
     <value>174, 117</value>
   </data>
-  <data name="button7.TabIndex" type="System.Int32, mscorlib">
+  <data name="AddKarteB.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="button7.Text" xml:space="preserve">
+  <data name="AddKarteB.Text" xml:space="preserve">
     <value>+ Karte</value>
   </data>
-  <data name="&gt;&gt;button7.Name" xml:space="preserve">
-    <value>button7</value>
+  <data name="&gt;&gt;AddKarteB.Name" xml:space="preserve">
+    <value>AddKarteB</value>
   </data>
-  <data name="&gt;&gt;button7.Type" xml:space="preserve">
+  <data name="&gt;&gt;AddKarteB.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button7.Parent" xml:space="preserve">
+  <data name="&gt;&gt;AddKarteB.Parent" xml:space="preserve">
     <value>panel3</value>
   </data>
-  <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;AddKarteB.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="button6.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="StayB.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 20pt</value>
   </data>
-  <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="StayB.Location" type="System.Drawing.Point, System.Drawing">
     <value>534, 29</value>
   </data>
-  <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="StayB.Size" type="System.Drawing.Size, System.Drawing">
     <value>138, 117</value>
   </data>
-  <data name="button6.TabIndex" type="System.Int32, mscorlib">
+  <data name="StayB.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="button6.Text" xml:space="preserve">
+  <data name="StayB.Text" xml:space="preserve">
     <value>Stay</value>
   </data>
-  <data name="&gt;&gt;button6.Name" xml:space="preserve">
-    <value>button6</value>
+  <data name="&gt;&gt;StayB.Name" xml:space="preserve">
+    <value>StayB</value>
   </data>
-  <data name="&gt;&gt;button6.Type" xml:space="preserve">
+  <data name="&gt;&gt;StayB.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;StayB.Parent" xml:space="preserve">
     <value>panel3</value>
   </data>
-  <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;StayB.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="button5.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="SplitB.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 20pt</value>
   </data>
-  <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="SplitB.Location" type="System.Drawing.Point, System.Drawing">
     <value>289, 29</value>
   </data>
-  <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="SplitB.Size" type="System.Drawing.Size, System.Drawing">
     <value>143, 117</value>
   </data>
-  <data name="button5.TabIndex" type="System.Int32, mscorlib">
+  <data name="SplitB.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="button5.Text" xml:space="preserve">
+  <data name="SplitB.Text" xml:space="preserve">
     <value>Split</value>
   </data>
-  <data name="&gt;&gt;button5.Name" xml:space="preserve">
-    <value>button5</value>
+  <data name="&gt;&gt;SplitB.Name" xml:space="preserve">
+    <value>SplitB</value>
   </data>
-  <data name="&gt;&gt;button5.Type" xml:space="preserve">
+  <data name="&gt;&gt;SplitB.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;SplitB.Parent" xml:space="preserve">
     <value>panel3</value>
   </data>
-  <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;SplitB.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="button4.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="DoubleB.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 20pt</value>
   </data>
-  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="DoubleB.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 29</value>
   </data>
-  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="DoubleB.Size" type="System.Drawing.Size, System.Drawing">
     <value>162, 117</value>
   </data>
-  <data name="button4.TabIndex" type="System.Int32, mscorlib">
+  <data name="DoubleB.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="button4.Text" xml:space="preserve">
+  <data name="DoubleB.Text" xml:space="preserve">
     <value>Double</value>
   </data>
-  <data name="&gt;&gt;button4.Name" xml:space="preserve">
-    <value>button4</value>
+  <data name="&gt;&gt;DoubleB.Name" xml:space="preserve">
+    <value>DoubleB</value>
   </data>
-  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+  <data name="&gt;&gt;DoubleB.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;DoubleB.Parent" xml:space="preserve">
     <value>panel3</value>
   </data>
-  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;DoubleB.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
@@ -428,31 +428,31 @@
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
-  <data name="button9.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="AnleitungB.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 15pt</value>
   </data>
-  <data name="button9.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="AnleitungB.Location" type="System.Drawing.Point, System.Drawing">
     <value>1367, 251</value>
   </data>
-  <data name="button9.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="AnleitungB.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 90</value>
   </data>
-  <data name="button9.TabIndex" type="System.Int32, mscorlib">
+  <data name="AnleitungB.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="button9.Text" xml:space="preserve">
+  <data name="AnleitungB.Text" xml:space="preserve">
     <value>Anleitung</value>
   </data>
-  <data name="&gt;&gt;button9.Name" xml:space="preserve">
-    <value>button9</value>
+  <data name="&gt;&gt;AnleitungB.Name" xml:space="preserve">
+    <value>AnleitungB</value>
   </data>
-  <data name="&gt;&gt;button9.Type" xml:space="preserve">
+  <data name="&gt;&gt;AnleitungB.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button9.Parent" xml:space="preserve">
+  <data name="&gt;&gt;AnleitungB.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button9.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;AnleitungB.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />

@@ -32,18 +32,18 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.GuthabenZahl = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
+            this.SetzenB = new System.Windows.Forms.Button();
             this.WenigerWetten = new System.Windows.Forms.Button();
             this.MehrWetten = new System.Windows.Forms.Button();
             this.WetteZahl = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.LeaveB = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.AddKarteB = new System.Windows.Forms.Button();
+            this.StayB = new System.Windows.Forms.Button();
+            this.SplitB = new System.Windows.Forms.Button();
+            this.DoubleB = new System.Windows.Forms.Button();
+            this.AnleitungB = new System.Windows.Forms.Button();
             this.K1 = new System.Windows.Forms.PictureBox();
             this.K2 = new System.Windows.Forms.PictureBox();
             this.K4 = new System.Windows.Forms.PictureBox();
@@ -59,9 +59,9 @@
             this.DebugText = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -100,7 +100,7 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.panel2.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
-            this.panel2.Controls.Add(this.button8);
+            this.panel2.Controls.Add(this.SetzenB);
             this.panel2.Controls.Add(this.WenigerWetten);
             this.panel2.Controls.Add(this.MehrWetten);
             this.panel2.Controls.Add(this.WetteZahl);
@@ -108,14 +108,14 @@
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
-            // button8
+            // SetzenB
             // 
-            this.button8.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
-            resources.ApplyResources(this.button8, "button8");
-            this.button8.ForeColor = System.Drawing.SystemColors.Control;
-            this.button8.Name = "button8";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.SetzenB.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
+            resources.ApplyResources(this.SetzenB, "SetzenB");
+            this.SetzenB.ForeColor = System.Drawing.SystemColors.Control;
+            this.SetzenB.Name = "SetzenB";
+            this.SetzenB.UseVisualStyleBackColor = true;
+            this.SetzenB.Click += new System.EventHandler(this.button8_Click);
             // 
             // WenigerWetten
             // 
@@ -149,71 +149,71 @@
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
             this.label2.Name = "label2";
             // 
-            // button3
+            // LeaveB
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button3.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.LeaveB.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.LeaveB.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
+            resources.ApplyResources(this.LeaveB, "LeaveB");
+            this.LeaveB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.LeaveB.Name = "LeaveB";
+            this.LeaveB.UseVisualStyleBackColor = false;
+            this.LeaveB.Click += new System.EventHandler(this.button3_Click);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.panel3.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
-            this.panel3.Controls.Add(this.button7);
-            this.panel3.Controls.Add(this.button6);
-            this.panel3.Controls.Add(this.button5);
-            this.panel3.Controls.Add(this.button4);
+            this.panel3.Controls.Add(this.AddKarteB);
+            this.panel3.Controls.Add(this.StayB);
+            this.panel3.Controls.Add(this.SplitB);
+            this.panel3.Controls.Add(this.DoubleB);
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             // 
-            // button7
+            // AddKarteB
             // 
-            this.button7.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
-            resources.ApplyResources(this.button7, "button7");
-            this.button7.ForeColor = System.Drawing.SystemColors.Control;
-            this.button7.Name = "button7";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.AddKarteB.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
+            resources.ApplyResources(this.AddKarteB, "AddKarteB");
+            this.AddKarteB.ForeColor = System.Drawing.SystemColors.Control;
+            this.AddKarteB.Name = "AddKarteB";
+            this.AddKarteB.UseVisualStyleBackColor = true;
+            this.AddKarteB.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button6
+            // StayB
             // 
-            this.button6.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
-            resources.ApplyResources(this.button6, "button6");
-            this.button6.ForeColor = System.Drawing.SystemColors.Control;
-            this.button6.Name = "button6";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.StayB.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
+            resources.ApplyResources(this.StayB, "StayB");
+            this.StayB.ForeColor = System.Drawing.SystemColors.Control;
+            this.StayB.Name = "StayB";
+            this.StayB.UseVisualStyleBackColor = true;
+            this.StayB.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button5
+            // SplitB
             // 
-            this.button5.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.ForeColor = System.Drawing.SystemColors.Control;
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.SplitB.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
+            resources.ApplyResources(this.SplitB, "SplitB");
+            this.SplitB.ForeColor = System.Drawing.SystemColors.Control;
+            this.SplitB.Name = "SplitB";
+            this.SplitB.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // DoubleB
             // 
-            this.button4.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.ForeColor = System.Drawing.SystemColors.Control;
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.DoubleB.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
+            resources.ApplyResources(this.DoubleB, "DoubleB");
+            this.DoubleB.ForeColor = System.Drawing.SystemColors.Control;
+            this.DoubleB.Name = "DoubleB";
+            this.DoubleB.UseVisualStyleBackColor = true;
+            this.DoubleB.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button9
+            // AnleitungB
             // 
-            this.button9.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button9.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
-            resources.ApplyResources(this.button9, "button9");
-            this.button9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button9.Name = "button9";
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.AnleitungB.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.AnleitungB.BackgroundImage = global::LA1300_Penut.Properties.Resources.Wood;
+            resources.ApplyResources(this.AnleitungB, "AnleitungB");
+            this.AnleitungB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.AnleitungB.Name = "AnleitungB";
+            this.AnleitungB.UseVisualStyleBackColor = false;
+            this.AnleitungB.Click += new System.EventHandler(this.button9_Click);
             // 
             // K1
             // 
@@ -318,6 +318,13 @@
             resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
             // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.BackColor = System.Drawing.Color.SaddleBrown;
+            this.label4.ForeColor = System.Drawing.SystemColors.Control;
+            this.label4.Name = "label4";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::LA1300_Penut.Properties.Resources.CardBackground;
@@ -331,13 +338,6 @@
             this.label3.BackColor = System.Drawing.Color.SaddleBrown;
             this.label3.ForeColor = System.Drawing.SystemColors.Window;
             this.label3.Name = "label3";
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.BackColor = System.Drawing.Color.SaddleBrown;
-            this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Name = "label4";
             // 
             // Form1
             // 
@@ -359,9 +359,9 @@
             this.Controls.Add(this.K3);
             this.Controls.Add(this.K2);
             this.Controls.Add(this.K1);
-            this.Controls.Add(this.button9);
+            this.Controls.Add(this.AnleitungB);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.LeaveB);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -401,15 +401,15 @@
         private System.Windows.Forms.Button MehrWetten;
         private System.Windows.Forms.Label WetteZahl;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button LeaveB;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button AddKarteB;
+        private System.Windows.Forms.Button StayB;
+        private System.Windows.Forms.Button SplitB;
+        private System.Windows.Forms.Button DoubleB;
+        private System.Windows.Forms.Button SetzenB;
         private System.Windows.Forms.Label GuthabenZahl;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button AnleitungB;
         private System.Windows.Forms.PictureBox K1;
         private System.Windows.Forms.PictureBox K2;
         private System.Windows.Forms.PictureBox K4;
