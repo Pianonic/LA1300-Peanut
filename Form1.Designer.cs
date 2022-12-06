@@ -59,10 +59,11 @@
             this.DebugText = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.DebugBank = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.BankPic = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.DebugBank = new System.Windows.Forms.Label();
+            this.DebugText2 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -321,6 +322,13 @@
             resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
             // 
+            // DebugBank
+            // 
+            resources.ApplyResources(this.DebugBank, "DebugBank");
+            this.DebugBank.BackColor = System.Drawing.Color.SaddleBrown;
+            this.DebugBank.ForeColor = System.Drawing.SystemColors.Window;
+            this.DebugBank.Name = "DebugBank";
+            // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
@@ -342,18 +350,17 @@
             this.label3.ForeColor = System.Drawing.SystemColors.Window;
             this.label3.Name = "label3";
             // 
-            // DebugBank
+            // DebugText2
             // 
-            resources.ApplyResources(this.DebugBank, "DebugBank");
-            this.DebugBank.BackColor = System.Drawing.Color.SaddleBrown;
-            this.DebugBank.ForeColor = System.Drawing.SystemColors.Window;
-            this.DebugBank.Name = "DebugBank";
+            resources.ApplyResources(this.DebugText2, "DebugText2");
+            this.DebugText2.Name = "DebugText2";
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LA1300_Penut.Properties.Resources.Billiard;
+            this.Controls.Add(this.DebugText2);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.DebugText);
@@ -439,5 +446,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label DebugBank;
+        private System.Windows.Forms.TextBox DebugText2;
     }
 }

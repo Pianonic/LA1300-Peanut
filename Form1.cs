@@ -18,17 +18,20 @@ namespace LA1300_Penut
     {
         int AnzahlKarten = 2;
         int Wette = 1;
-        int Guthaben = 10;
+        double Guthaben = 10;
         string currentdyrectorry = Environment.CurrentDirectory;
         string[] fileArray = Directory.GetFiles(@"C:\Users\nicla\source\repos\LA1300-Peanut\Cards\", "*.png", SearchOption.AllDirectories);
+        string CardBackground = @"C:\Users\nicla\source\repos\LA1300-Peanut\CardBackground.png";
 
         string filename = null;
-        string[] ArrayNames = new string[52];
-        string[] ArrayNamesFull = new string[52];
+        string[] NamesPNGFull = new string[52];
+        string[] CardValue = new string[52];
         string[] cache = new string[2];
         int Points = 0;
         int BankPoints = 0;
         int cachePoints = 0;
+        bool FirstRound = true;
+        bool GameEndet = false;
 
         List<PictureBox> items = new List<PictureBox>();
 
@@ -72,138 +75,32 @@ namespace LA1300_Penut
             {
                 // using the method
                 filename = Path.GetFileName(item);
-                ArrayNames[counter] = filename;
+                NamesPNGFull[counter] = filename;
                 counter++;
             }
             counter = 0;
 
-            foreach (string s in ArrayNames)
+            foreach (string s in NamesPNGFull)
             {
                 cache = s.Split('_');
-                ArrayNamesFull[counter] = cache[0];
+                CardValue[counter] = cache[0];
                 counter++;
             }
             counter = 0;
 
-            rndNum = rnd.Next(fileArray.Length);
-            K1.Image = new Bitmap(fileArray[rndNum]);
-
-            try
-            {
-                Points = Points + Convert.ToInt32(ArrayNamesFull[rndNum]);
-                DebugText.Text = Convert.ToString(Points);
-                GuthabenZahl.Refresh();
-            }
-            catch
-            {
-                if (ArrayNamesFull[rndNum] == "ace")
-                {
-                    cachePoints = Points;
-                    cachePoints = cachePoints + 10;
-                    if (cachePoints > 20)
-                    {
-                        cachePoints = 0;
-                        Points++;
-                    }
-                    else
-                    {
-                        Points = Points + 10;
-                    }
-                    DebugText.Text = Convert.ToString(Points);
-                    DebugText.Refresh();
-                }
-                else
-                {
-                    Points = Points + 10;
-                    DebugText.Text = Convert.ToString(Points);
-                    DebugText.Refresh();
-                }
-            }
-
-            rndNum = rnd.Next(fileArray.Length);
-            K2.Image = new Bitmap(fileArray[rndNum]);
-
-            try
-            {
-                Points = Points + Convert.ToInt32(ArrayNamesFull[rndNum]);
-                DebugText.Text = Convert.ToString(Points);
-                DebugText.Refresh();
-            }
-            catch
-            {
-                if (ArrayNamesFull[rndNum] == "ace")
-                {
-                    cachePoints = Points;
-                    cachePoints = cachePoints + 10;
-                    if (cachePoints > 20)
-                    {
-                        cachePoints = 0;
-                        Points++;
-                    }
-                    else
-                    {
-                        Points = Points + 10;
-                    }
-                    DebugText.Text = Convert.ToString(Points);
-                    DebugText.Refresh();
-                }
-                else
-                {
-                    Points = Points + 10;
-                    DebugText.Text = Convert.ToString(Points);
-                    DebugText.Refresh();
-                }
-            }
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            if (BankPoints < 20)
-            {
-                try
-                {
-                    BankPoints = BankPoints + Convert.ToInt32(ArrayNamesFull[rndNum]);
-                    DebugBank.Text = Convert.ToString(BankPoints);
-                    DebugBank.Refresh();
-                }
-                catch
-                {
-                    if (ArrayNamesFull[rndNum] == "ace")
-                    {
-                        cachePoints = BankPoints;
-                        cachePoints = cachePoints + 10;
-                        if (cachePoints > 20)
-                        {
-                            cachePoints = 0;
-                            BankPoints++;
-                        }
-                        else
-                        {
-                            BankPoints = BankPoints + 10;
-                        }
-                        DebugBank.Text = Convert.ToString(Points);
-                        DebugBank.Refresh();
-                    }
-                    else
-                    {
-                        BankPoints = BankPoints + 10;
-                        DebugBank.Text = Convert.ToString(BankPoints);
-                        DebugBank.Refresh();
-                    }
-                }
+            BankCard();
 
-                rndNum = rnd.Next(fileArray.Length);
-                BankPic.Image = new Bitmap(fileArray[rndNum]);
-                DebugText.Text = ArrayNamesFull[rndNum];
-                DebugText.Refresh();
-            }
-            if (Points < 20)
+            if (Points < 21)
             {
                 if (counter == 0)
                 {
                     rndNum = rnd.Next(fileArray.Length);
                     K3.Image = new Bitmap(fileArray[rndNum]);
-                    DebugText.Text = ArrayNamesFull[rndNum];
+                    DebugText.Text = CardValue[rndNum];
                     DebugText.Refresh();
                     counter++;
                 }
@@ -211,7 +108,7 @@ namespace LA1300_Penut
                 {
                     rndNum = rnd.Next(fileArray.Length);
                     K4.Image = new Bitmap(fileArray[rndNum]);
-                    DebugText.Text = ArrayNamesFull[rndNum];
+                    DebugText.Text = CardValue[rndNum];
                     DebugText.Refresh();
                     counter++;
                 }
@@ -219,7 +116,7 @@ namespace LA1300_Penut
                 {
                     rndNum = rnd.Next(fileArray.Length);
                     K5.Image = new Bitmap(fileArray[rndNum]);
-                    DebugText.Text = ArrayNamesFull[rndNum];
+                    DebugText.Text = CardValue[rndNum];
                     DebugText.Refresh();
                     counter++;
                 }
@@ -227,7 +124,7 @@ namespace LA1300_Penut
                 {
                     rndNum = rnd.Next(fileArray.Length);
                     K6.Image = new Bitmap(fileArray[rndNum]);
-                    DebugText.Text = ArrayNamesFull[rndNum];
+                    DebugText.Text = CardValue[rndNum];
                     DebugText.Refresh();
                     counter++;
                 }
@@ -235,7 +132,7 @@ namespace LA1300_Penut
                 {
                     rndNum = rnd.Next(fileArray.Length);
                     K7.Image = new Bitmap(fileArray[rndNum]);
-                    DebugText.Text = ArrayNamesFull[rndNum];
+                    DebugText.Text = CardValue[rndNum];
                     DebugText.Refresh();
                     counter++;
                 }
@@ -243,7 +140,7 @@ namespace LA1300_Penut
                 {
                     rndNum = rnd.Next(fileArray.Length);
                     K8.Image = new Bitmap(fileArray[rndNum]);
-                    DebugText.Text = ArrayNamesFull[rndNum];
+                    DebugText.Text = CardValue[rndNum];
                     DebugText.Refresh();
                     counter++;
                 }
@@ -251,7 +148,7 @@ namespace LA1300_Penut
                 {
                     rndNum = rnd.Next(fileArray.Length);
                     K9.Image = new Bitmap(fileArray[rndNum]);
-                    DebugText.Text = ArrayNamesFull[rndNum];
+                    DebugText.Text = CardValue[rndNum];
                     DebugText.Refresh();
                     counter++;
                 }
@@ -259,7 +156,7 @@ namespace LA1300_Penut
                 {
                     rndNum = rnd.Next(fileArray.Length);
                     K10.Image = new Bitmap(fileArray[rndNum]);
-                    DebugText.Text = ArrayNamesFull[rndNum];
+                    DebugText.Text = CardValue[rndNum];
                     DebugText.Refresh();
                     counter++;
                 }
@@ -267,7 +164,7 @@ namespace LA1300_Penut
                 {
                     rndNum = rnd.Next(fileArray.Length);
                     K11.Image = new Bitmap(fileArray[rndNum]);
-                    DebugText.Text = ArrayNamesFull[rndNum];
+                    DebugText.Text = CardValue[rndNum];
                     DebugText.Refresh();
                     counter++;
                 }
@@ -275,49 +172,29 @@ namespace LA1300_Penut
                 {
                     rndNum = rnd.Next(fileArray.Length);
                     K12.Image = new Bitmap(fileArray[rndNum]);
-                    DebugText.Text = ArrayNamesFull[rndNum];
+                    DebugText.Text = CardValue[rndNum];
                     DebugText.Refresh();
                     counter++;
                 }
-                try
-                {
-                    Points = Points + Convert.ToInt32(ArrayNamesFull[rndNum]);
-                    DebugText.Text = Convert.ToString(Points);
-                    DebugText.Refresh();
-                }
-                catch
-                {
-                    if (ArrayNamesFull[rndNum] == "ace")
-                    {
-                        cachePoints = Points;
-                        cachePoints = cachePoints + 10;
-                        if (cachePoints > 20)
-                        {
-                            cachePoints = 0;
-                            Points++;
-                        }
-                        else
-                        {
-                            Points = Points + 10;
-                        }
-                        DebugText.Text = Convert.ToString(Points);
-                        DebugText.Refresh();
-                    }
-                    else
-                    {
-                        Points = Points + 10;
-                        DebugText.Text = Convert.ToString(Points);
-                        DebugText.Refresh();
-                    }
-                }
+                
             }
-            else if (Points > 20)
+
+            AddPoints();
+
+            if (Points > 21)
             {
-                MessageBox.Show("Verloren", "!!! DU GAGGAO !!!");
+                GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
+                GuthabenZahl.Refresh();
+                MessageBox.Show("Sie haben Verloren", "BalckJack");
+                Reset();
             }
-            else if (Points == 20)
+            else if (BankPoints > 21)
             {
-                MessageBox.Show("Gewonnen", "!!! DU GAGGAO !!!");
+                Guthaben = Guthaben + Wette * 2;
+                GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
+                GuthabenZahl.Refresh();
+                MessageBox.Show("Sie haben Gewonnen", "BalckJack");
+                Reset();
             }
 
         }
@@ -385,6 +262,12 @@ namespace LA1300_Penut
 
         private void button8_Click(object sender, EventArgs e)
         {
+            if(Guthaben < 1)
+            {
+                MessageBox.Show("Sie haben Verloren. Spiel Beendet", "BalckJack");
+                System.Windows.Forms.Application.Exit();
+            }
+
             if (Wette <= Guthaben)
             {
                 Guthaben = Guthaben - Wette;
@@ -403,6 +286,33 @@ namespace LA1300_Penut
                 WetteZahl.Text = Convert.ToString(Wette) + " CHF";
                 WetteZahl.Refresh();
             }
+
+            BankCard();
+
+            if (FirstRound)
+            {
+                rndNum = rnd.Next(fileArray.Length);
+                K1.Image = new Bitmap(fileArray[rndNum]);
+
+                AddPoints();
+
+                rndNum = rnd.Next(fileArray.Length);
+                K2.Image = new Bitmap(fileArray[rndNum]);
+
+                AddPoints();
+
+                FirstRound = false;
+
+                if (Points == 21)
+                {
+                    MessageBox.Show("Sie haben BlackJack", "BalckJack");
+                    Guthaben = Guthaben + Wette + (1.5 * Wette);
+                    GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
+                    GuthabenZahl.Refresh();
+                    Wette = 0;
+                }
+            }
+            
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -426,30 +336,155 @@ namespace LA1300_Penut
 
         private void button6_Click(object sender, EventArgs e)
         {
-           
-
-            //DEALER
-            int DealerPoints = 18;
-            //blackjack
-            if (AnzahlKarten == 2)
+            if (GameEndet == false)
             {
-                if (Points == 21)
+                if (Points < BankPoints || Points > 21)
                 {
-                    Guthaben = (2 * Guthaben + 2 * Wette + 3 * Wette) / 2;
+                    GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
+                    GuthabenZahl.Refresh();
+                    MessageBox.Show("Sie haben Verloren", "BalckJack");
                 }
+                else if (BankPoints > 21)
+                {
+                    Guthaben = Guthaben + Wette * 2;
+                    GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
+                    GuthabenZahl.Refresh();
+                    MessageBox.Show("Sie haben Gewonnen", "BalckJack");
+                }
+                else if (BankPoints == Points)
+                {
+                    Guthaben = Guthaben + Wette;
+                    GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
+                    GuthabenZahl.Refresh();
+                    MessageBox.Show("Es herscht gleichstand", "BalckJack");
+                }
+                else
+                {
+                    Guthaben = Guthaben + Wette * 2;
+                    GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
+                    GuthabenZahl.Refresh();
+                    MessageBox.Show("Sie haben Gewonnen", "BalckJack");
+                }
+                GameEndet = true;
+                Reset();
             }
-
-
-
-            if (Points < DealerPoints || Points > 21)
+            else
             {
-                Guthaben = Guthaben - Wette;
+                Reset();
             }
         }
 
         private void SplitB_Click(object sender, EventArgs e)
         {
             //Create_New_Card();
+        }
+
+        private void BankCard()
+        {
+            if(BankPoints <= 21)
+            {
+                rndNum = rnd.Next(fileArray.Length);
+                BankPic.Image = new Bitmap(fileArray[rndNum]);
+
+                try
+                {
+                    BankPoints = BankPoints + Convert.ToInt32(CardValue[rndNum]);
+                    DebugBank.Text = Convert.ToString(BankPoints);
+                    DebugBank.Refresh();
+                }
+                catch
+                {
+
+                    if (CardValue[rndNum] == "ace")
+                    {
+                        cachePoints = BankPoints;
+                        cachePoints = cachePoints + 11;
+                        if (cachePoints > 21)
+                        {
+                            cachePoints = 0;
+                            BankPoints++;
+                        }
+                        else
+                        {
+                            BankPoints = BankPoints + 1;
+                        }
+                        DebugBank.Text = Convert.ToString(BankPoints);
+                        DebugBank.Refresh();
+                    }
+                    else
+                    {
+                        BankPoints = BankPoints + 10;
+                        DebugBank.Text = Convert.ToString(BankPoints);
+                        DebugBank.Refresh();
+                    }
+                }
+
+                DebugText.Text = CardValue[rndNum];
+                DebugText.Refresh();
+            }
+        }
+        private void AddPoints()
+        {
+            try
+            {
+                Points = Points + Convert.ToInt32(CardValue[rndNum]);
+                DebugText.Text = Convert.ToString(Points);
+                DebugText.Refresh();
+            }
+            catch
+            {
+                if (CardValue[rndNum] == "ace")
+                {
+                    cachePoints = Points;
+                    cachePoints = cachePoints + 11;
+                    if (cachePoints > 21)
+                    {
+                        cachePoints = 0;
+                        Points++;
+                    }
+                    else
+                    {
+                        Points = Points + 1;
+                    }
+                    DebugText2.Text = Convert.ToString(Points);
+                    DebugText2.Refresh();
+                }
+                else
+                {
+                    Points = Points + 10;
+                    DebugText2.Text = Convert.ToString(Points);
+                    DebugText2.Refresh();
+                }
+            }
+        }
+        private void Reset()
+        {
+            K1.Image = new Bitmap(CardBackground);
+            K2.Image = new Bitmap(CardBackground);
+            K3.Image = new Bitmap(CardBackground);
+            K4.Image = new Bitmap(CardBackground);
+            K5.Image = new Bitmap(CardBackground);
+            K6.Image = new Bitmap(CardBackground);
+            K7.Image = new Bitmap(CardBackground);
+            K8.Image = new Bitmap(CardBackground);
+            K9.Image = new Bitmap(CardBackground);
+            K10.Image = new Bitmap(CardBackground);
+            K11.Image = new Bitmap(CardBackground);
+            K12.Image = new Bitmap(CardBackground);
+            BankPic.Image = new Bitmap(CardBackground);
+            DebugBank.Text = null;
+            DebugText.Text = null;
+            DebugText2.Text = null;
+            FirstRound = true;
+            GameEndet = false;
+            Points = 0;
+            BankPoints = 0;
+
+            if (Guthaben < 1)
+            {
+                MessageBox.Show("Sie haben Verloren. Spiel Beendet", "BalckJack");
+                System.Windows.Forms.Application.Exit();
+            }
         }
     }
 }
