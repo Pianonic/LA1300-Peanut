@@ -16,7 +16,6 @@ namespace LA1300_Penut
 {
     public partial class Form1 : Form
     {
-        int AnzahlKarten = 2;
         int Wette = 1;
         double Guthaben = 10;
         string currentdyrectorry = Environment.CurrentDirectory;
@@ -32,6 +31,9 @@ namespace LA1300_Penut
         int cachePoints = 0;
         bool FirstRound = true;
         bool GameEndet = false;
+        bool isBet = false;
+        bool isClick = false;
+        bool isDouble = false;
 
         List<PictureBox> items = new List<PictureBox>();
 
@@ -43,22 +45,6 @@ namespace LA1300_Penut
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void Create_New_Card()
-        {
-            PictureBox NewCard = new PictureBox();
-            NewCard.Height = K1.Height;
-            NewCard.Width = K1.Width;
-            NewCard.BackgroundImage = K1.BackgroundImage;
-
-            int x = K1.Location.X;
-            int y = K1.Location.Y;
-
-            x = x + 1;
-            NewCard.Location = new Point(x, y); 
-
-            this.Controls.Add(NewCard);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -73,7 +59,6 @@ namespace LA1300_Penut
 
             foreach (string item in fileArray)
             {
-                // using the method
                 filename = Path.GetFileName(item);
                 NamesPNGFull[counter] = filename;
                 counter++;
@@ -92,109 +77,116 @@ namespace LA1300_Penut
 
         private void button7_Click(object sender, EventArgs e)
         {
-            BankCard();
-
-            if (Points < 21)
+            if (isBet)
             {
-                if (counter == 0)
+                BankCard();
+
+                if (Points < 21)
                 {
-                    rndNum = rnd.Next(fileArray.Length);
-                    K3.Image = new Bitmap(fileArray[rndNum]);
-                    DebugText.Text = CardValue[rndNum];
-                    DebugText.Refresh();
-                    counter++;
+                    if (counter == 0)
+                    {
+                        rndNum = rnd.Next(fileArray.Length);
+                        K3.Image = new Bitmap(fileArray[rndNum]);
+                        DebugText.Text = CardValue[rndNum];
+                        DebugText.Refresh();
+                        counter++;
+                    }
+                    else if (counter == 1)
+                    {
+                        rndNum = rnd.Next(fileArray.Length);
+                        K4.Image = new Bitmap(fileArray[rndNum]);
+                        DebugText.Text = CardValue[rndNum];
+                        DebugText.Refresh();
+                        counter++;
+                    }
+                    else if (counter == 2)
+                    {
+                        rndNum = rnd.Next(fileArray.Length);
+                        K5.Image = new Bitmap(fileArray[rndNum]);
+                        DebugText.Text = CardValue[rndNum];
+                        DebugText.Refresh();
+                        counter++;
+                    }
+                    else if (counter == 3)
+                    {
+                        rndNum = rnd.Next(fileArray.Length);
+                        K6.Image = new Bitmap(fileArray[rndNum]);
+                        DebugText.Text = CardValue[rndNum];
+                        DebugText.Refresh();
+                        counter++;
+                    }
+                    else if (counter == 4)
+                    {
+                        rndNum = rnd.Next(fileArray.Length);
+                        K7.Image = new Bitmap(fileArray[rndNum]);
+                        DebugText.Text = CardValue[rndNum];
+                        DebugText.Refresh();
+                        counter++;
+                    }
+                    else if (counter == 5)
+                    {
+                        rndNum = rnd.Next(fileArray.Length);
+                        K8.Image = new Bitmap(fileArray[rndNum]);
+                        DebugText.Text = CardValue[rndNum];
+                        DebugText.Refresh();
+                        counter++;
+                    }
+                    else if (counter == 6)
+                    {
+                        rndNum = rnd.Next(fileArray.Length);
+                        K9.Image = new Bitmap(fileArray[rndNum]);
+                        DebugText.Text = CardValue[rndNum];
+                        DebugText.Refresh();
+                        counter++;
+                    }
+                    else if (counter == 7)
+                    {
+                        rndNum = rnd.Next(fileArray.Length);
+                        K10.Image = new Bitmap(fileArray[rndNum]);
+                        DebugText.Text = CardValue[rndNum];
+                        DebugText.Refresh();
+                        counter++;
+                    }
+                    else if (counter == 8)
+                    {
+                        rndNum = rnd.Next(fileArray.Length);
+                        K11.Image = new Bitmap(fileArray[rndNum]);
+                        DebugText.Text = CardValue[rndNum];
+                        DebugText.Refresh();
+                        counter++;
+                    }
+                    else if (counter == 9)
+                    {
+                        rndNum = rnd.Next(fileArray.Length);
+                        K12.Image = new Bitmap(fileArray[rndNum]);
+                        DebugText.Text = CardValue[rndNum];
+                        DebugText.Refresh();
+                        counter++;
+                    }
+                    AddPoints();
                 }
-                else if (counter == 1)
+                
+                if (Points > 21)
                 {
-                    rndNum = rnd.Next(fileArray.Length);
-                    K4.Image = new Bitmap(fileArray[rndNum]);
-                    DebugText.Text = CardValue[rndNum];
-                    DebugText.Refresh();
-                    counter++;
+                    GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
+                    GuthabenZahl.Refresh();
+                    MessageBox.Show("Sie haben Verloren", "BalckJack");
+                    Reset();
                 }
-                else if (counter == 2)
+
+                if (BankPoints > 21)
                 {
-                    rndNum = rnd.Next(fileArray.Length);
-                    K5.Image = new Bitmap(fileArray[rndNum]);
-                    DebugText.Text = CardValue[rndNum];
-                    DebugText.Refresh();
-                    counter++;
-                }
-                else if (counter == 3)
-                {
-                    rndNum = rnd.Next(fileArray.Length);
-                    K6.Image = new Bitmap(fileArray[rndNum]);
-                    DebugText.Text = CardValue[rndNum];
-                    DebugText.Refresh();
-                    counter++;
-                }
-                else if (counter == 4)
-                {
-                    rndNum = rnd.Next(fileArray.Length);
-                    K7.Image = new Bitmap(fileArray[rndNum]);
-                    DebugText.Text = CardValue[rndNum];
-                    DebugText.Refresh();
-                    counter++;
-                }
-                else if (counter == 5)
-                {
-                    rndNum = rnd.Next(fileArray.Length);
-                    K8.Image = new Bitmap(fileArray[rndNum]);
-                    DebugText.Text = CardValue[rndNum];
-                    DebugText.Refresh();
-                    counter++;
-                }
-                else if (counter == 6)
-                {
-                    rndNum = rnd.Next(fileArray.Length);
-                    K9.Image = new Bitmap(fileArray[rndNum]);
-                    DebugText.Text = CardValue[rndNum];
-                    DebugText.Refresh();
-                    counter++;
-                }
-                else if (counter == 7)
-                {
-                    rndNum = rnd.Next(fileArray.Length);
-                    K10.Image = new Bitmap(fileArray[rndNum]);
-                    DebugText.Text = CardValue[rndNum];
-                    DebugText.Refresh();
-                    counter++;
-                }
-                else if (counter == 8)
-                {
-                    rndNum = rnd.Next(fileArray.Length);
-                    K11.Image = new Bitmap(fileArray[rndNum]);
-                    DebugText.Text = CardValue[rndNum];
-                    DebugText.Refresh();
-                    counter++;
-                }
-                else if (counter == 9)
-                {
-                    rndNum = rnd.Next(fileArray.Length);
-                    K12.Image = new Bitmap(fileArray[rndNum]);
-                    DebugText.Text = CardValue[rndNum];
-                    DebugText.Refresh();
-                    counter++;
+                    Guthaben = Guthaben + Wette * 2;
+                    GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
+                    GuthabenZahl.Refresh();
+                    MessageBox.Show("Sie haben Gewonnen", "BalckJack");
+                    Reset();
                 }
                 
             }
-
-            AddPoints();
-
-            if (Points > 21)
+            else
             {
-                GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
-                GuthabenZahl.Refresh();
-                MessageBox.Show("Sie haben Verloren", "BalckJack");
-                Reset();
-            }
-            else if (BankPoints > 21)
-            {
-                Guthaben = Guthaben + Wette * 2;
-                GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
-                GuthabenZahl.Refresh();
-                MessageBox.Show("Sie haben Gewonnen", "BalckJack");
-                Reset();
+                MessageBox.Show("Sie müssen zuerst wetten!", "BlackJack");
             }
 
         }
@@ -262,57 +254,64 @@ namespace LA1300_Penut
 
         private void button8_Click(object sender, EventArgs e)
         {
-            if(Guthaben < 1)
+            if (isBet == false)
             {
-                MessageBox.Show("Sie haben Verloren. Spiel Beendet", "BalckJack");
-                System.Windows.Forms.Application.Exit();
-            }
 
-            if (Wette <= Guthaben)
-            {
-                Guthaben = Guthaben - Wette;
-                GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
-                GuthabenZahl.Refresh();
+                if (Wette <= Guthaben)
+                {
+                    Guthaben = Guthaben - Wette;
+                    GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
+                    GuthabenZahl.Refresh();
+                    isClick = true;
+                }
+                else
+                {
+                    WetteZahl.Text = "Zu hoch!";
+                    WetteZahl.Refresh();
+                    WetteZahl.BackColor = System.Drawing.Color.Red;
+                    WetteZahl.Refresh();
+                    Thread.Sleep(500);
+                    WetteZahl.BackColor = System.Drawing.Color.Transparent;
+                    WetteZahl.Refresh();
+                    WetteZahl.Text = Convert.ToString(Wette) + " CHF";
+                    WetteZahl.Refresh();
+                }
+
+                if (isClick)
+                {
+                    BankCard();
+
+                    if (FirstRound)
+                    {
+                        rndNum = rnd.Next(fileArray.Length);
+                        K1.Image = new Bitmap(fileArray[rndNum]);
+
+                        AddPoints();
+
+                        rndNum = rnd.Next(fileArray.Length);
+                        K2.Image = new Bitmap(fileArray[rndNum]);
+
+                        AddPoints();
+
+                        FirstRound = false;
+
+                        if (Points == 21)
+                        {
+                            MessageBox.Show("Sie haben BlackJack", "BalckJack");
+                            Guthaben = Guthaben + Wette + (1.5 * Wette);
+                            GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
+                            GuthabenZahl.Refresh();
+                            Wette = 0;
+                        }
+                    }
+                    isBet = true;
+                    isClick = false;
+                }
             }
             else
             {
-                WetteZahl.Text = "None!";
-                WetteZahl.Refresh();
-                WetteZahl.BackColor = System.Drawing.Color.Red;
-                WetteZahl.Refresh();
-                Thread.Sleep(500);
-                WetteZahl.BackColor = System.Drawing.Color.Transparent;
-                WetteZahl.Refresh();
-                WetteZahl.Text = Convert.ToString(Wette) + " CHF";
-                WetteZahl.Refresh();
+                MessageBox.Show("Sie können nicht mehr wetten!", "BlackJack");
             }
-
-            BankCard();
-
-            if (FirstRound)
-            {
-                rndNum = rnd.Next(fileArray.Length);
-                K1.Image = new Bitmap(fileArray[rndNum]);
-
-                AddPoints();
-
-                rndNum = rnd.Next(fileArray.Length);
-                K2.Image = new Bitmap(fileArray[rndNum]);
-
-                AddPoints();
-
-                FirstRound = false;
-
-                if (Points == 21)
-                {
-                    MessageBox.Show("Sie haben BlackJack", "BalckJack");
-                    Guthaben = Guthaben + Wette + (1.5 * Wette);
-                    GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
-                    GuthabenZahl.Refresh();
-                    Wette = 0;
-                }
-            }
-            
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -323,106 +322,154 @@ namespace LA1300_Penut
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (Wette <= Guthaben / 2)
+            if (isBet)
             {
-                Wette = Wette * 2;
-                button7_Click(sender, e);
+                if (Wette * 2 <= Guthaben)
+                {
+                    isDouble = true;
+                    button7_Click(sender, e);
+                }
+                else
+                {
+                    MessageBox.Show("Sie müssen die wette verniedrigen oder haben zu wenig Geld", "BlackJack");
+                }
             }
             else
             {
-                 MessageBox.Show("zu", "ARM");
+                MessageBox.Show("Sie müssen zuerst wetten!", "BlackJack");
             }
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            if (GameEndet == false)
+            if (isBet)
             {
-                if (Points < BankPoints || Points > 21)
+                if (GameEndet == false)
                 {
-                    GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
-                    GuthabenZahl.Refresh();
-                    MessageBox.Show("Sie haben Verloren", "BalckJack");
-                }
-                else if (BankPoints > 21)
-                {
-                    Guthaben = Guthaben + Wette * 2;
-                    GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
-                    GuthabenZahl.Refresh();
-                    MessageBox.Show("Sie haben Gewonnen", "BalckJack");
-                }
-                else if (BankPoints == Points)
-                {
-                    Guthaben = Guthaben + Wette;
-                    GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
-                    GuthabenZahl.Refresh();
-                    MessageBox.Show("Es herscht gleichstand", "BalckJack");
+                    if (Points < BankPoints || Points > 21)
+                    {
+                        GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
+                        GuthabenZahl.Refresh();
+                        MessageBox.Show("Sie haben Verloren", "BalckJack");
+                    }
+                    else if (BankPoints > 21)
+                    {
+                        Guthaben = Guthaben + Wette * 2;
+                        GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
+                        GuthabenZahl.Refresh();
+                        MessageBox.Show("Sie haben Gewonnen", "BalckJack");
+                    }
+                    else if (BankPoints == Points)
+                    {
+                        Guthaben = Guthaben + Wette;
+                        GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
+                        GuthabenZahl.Refresh();
+                        MessageBox.Show("Es herscht gleichstand", "BalckJack");
+                    }
+                    else
+                    {
+                        Guthaben = Guthaben + Wette * 2;
+                        GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
+                        GuthabenZahl.Refresh();
+                        MessageBox.Show("Sie haben Gewonnen", "BalckJack");
+                    }
+                    GameEndet = true;
+                    Reset();
                 }
                 else
                 {
-                    Guthaben = Guthaben + Wette * 2;
-                    GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
-                    GuthabenZahl.Refresh();
-                    MessageBox.Show("Sie haben Gewonnen", "BalckJack");
+                    Reset();
                 }
-                GameEndet = true;
-                Reset();
             }
             else
             {
-                Reset();
+                MessageBox.Show("Sie müssen zuerst wetten!", "BlackJack");
             }
         }
 
         private void SplitB_Click(object sender, EventArgs e)
         {
+            if(isBet)
+            {
+                MessageBox.Show("Dieser Button macht noch nichts :)", "BlackJack");
+            }
+            else
+            {
+                MessageBox.Show("Sie müssen zuerst wetten!", "BlackJack");
+            }
             //Create_New_Card();
         }
 
         private void BankCard()
         {
-            if(BankPoints <= 21)
+            if (FirstRound)
             {
                 rndNum = rnd.Next(fileArray.Length);
                 BankPic.Image = new Bitmap(fileArray[rndNum]);
 
-                try
-                {
-                    BankPoints = BankPoints + Convert.ToInt32(CardValue[rndNum]);
-                    DebugBank.Text = Convert.ToString(BankPoints);
-                    DebugBank.Refresh();
-                }
-                catch
-                {
+                AddBankPoins();
 
-                    if (CardValue[rndNum] == "ace")
+                rndNum = rnd.Next(fileArray.Length);
+                BankPic.Image = new Bitmap(fileArray[rndNum]);
+
+                AddBankPoins();
+
+            }
+            else
+            {
+                if (BankPoints >= 18)
+                {
+                    //nichts
+                }
+                else if (BankPoints < 21)
+                {
+                    rndNum = rnd.Next(fileArray.Length);
+                    BankPic.Image = new Bitmap(fileArray[rndNum]);
+
+                    AddBankPoins();
+                }
+            }
+        }
+
+        private void AddBankPoins()
+        {
+            try
+            {
+                BankPoints = BankPoints + Convert.ToInt32(CardValue[rndNum]);
+                DebugBank.Text = Convert.ToString(BankPoints);
+                DebugBank.Refresh();
+            }
+            catch
+            {
+
+                if (CardValue[rndNum] == "ace")
+                {
+                    cachePoints = BankPoints;
+                    cachePoints = cachePoints + 11;
+                    if (cachePoints > 21)
                     {
-                        cachePoints = BankPoints;
-                        cachePoints = cachePoints + 11;
-                        if (cachePoints > 21)
-                        {
-                            cachePoints = 0;
-                            BankPoints++;
-                        }
-                        else
-                        {
-                            BankPoints = BankPoints + 1;
-                        }
-                        DebugBank.Text = Convert.ToString(BankPoints);
-                        DebugBank.Refresh();
+                        cachePoints = 0;
+                        BankPoints++;
                     }
                     else
                     {
-                        BankPoints = BankPoints + 10;
-                        DebugBank.Text = Convert.ToString(BankPoints);
-                        DebugBank.Refresh();
+                        BankPoints = BankPoints + 11;
                     }
+                    DebugBank.Text = Convert.ToString(BankPoints);
+                    DebugBank.Refresh();
                 }
-
-                DebugText.Text = CardValue[rndNum];
-                DebugText.Refresh();
+                else
+                {
+                    BankPoints = BankPoints + 10;
+                    DebugBank.Text = Convert.ToString(BankPoints);
+                    DebugBank.Refresh();
+                }
             }
+
+            DebugText.Text = CardValue[rndNum];
+            DebugText.Refresh();
         }
+
         private void AddPoints()
         {
             try
@@ -444,7 +491,7 @@ namespace LA1300_Penut
                     }
                     else
                     {
-                        Points = Points + 1;
+                        Points = Points + 11;
                     }
                     DebugText2.Text = Convert.ToString(Points);
                     DebugText2.Refresh();
@@ -477,9 +524,10 @@ namespace LA1300_Penut
             DebugText2.Text = null;
             FirstRound = true;
             GameEndet = false;
+            isBet = false;
             Points = 0;
             BankPoints = 0;
-
+            counter = 0;
             if (Guthaben < 1)
             {
                 MessageBox.Show("Sie haben Verloren. Spiel Beendet", "BalckJack");
