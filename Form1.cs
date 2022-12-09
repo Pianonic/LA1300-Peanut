@@ -33,7 +33,6 @@ namespace LA1300_Penut
         bool GameEndet = false;
         bool isBet = false;
         bool isClick = false;
-        bool isDouble = false;
 
         List<PictureBox> items = new List<PictureBox>();
 
@@ -326,7 +325,7 @@ namespace LA1300_Penut
             {
                 if (Wette * 2 <= Guthaben)
                 {
-                    isDouble = true;
+                    Wette = Wette*2;
                     button7_Click(sender, e);
                 }
                 else
@@ -528,6 +527,7 @@ namespace LA1300_Penut
             Points = 0;
             BankPoints = 0;
             counter = 0;
+
             if (Guthaben < 1)
             {
                 MessageBox.Show("Sie haben Verloren. Spiel Beendet", "BalckJack");
