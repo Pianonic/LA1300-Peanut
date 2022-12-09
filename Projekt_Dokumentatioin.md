@@ -7,7 +7,7 @@
 | ----- | ------- | ------------------------------------------------------------ |
 |   22.11.2022    | 0.0.1   | Wir haben heute die User Stories, die Planung und die Testfälle gemacht. |
 |   29.11.2022    | 0.0.2  |         Wir haben heute an den Anforderungen weitergearbeitet.                                                     |
-|       | 1.0.0   |                                                              |
+|    06.12.2022   | 0.0.3   |           Koch und Grigioni haben die PowerPoint erstellt. Meyer, Gilardoni und Erismann haben weiter programmiert                                                   |
 
 ## 1 Informieren
 https://www.besteonlinecasinos.co/blackjack/regeln/
@@ -105,7 +105,10 @@ Total: 900 min.
 | 11.A  |  29.11.2022     |     Meyer      |     45           |             30       |
 | 16.A  |   29.11.2022    |      Grigioni     |     45           |             30       |
 | 16.B  |  29.11.2022     |     Erismann      |     45           |             30       |
-
+|13.A|06.12.2022|Meyer|45|120|
+|14.A|06.12.2022|Erismann|45|120|
+|15.A|06.12.2022| Gilardoni |45|60|
+|15.B|06.12.2022| Gilardoni |45|60|
 
 
 ✍️ Tragen Sie jedes Mal, wenn Sie ein Arbeitspaket abschließen, hier ein, wie lang Sie effektiv dafür hatten.
