@@ -326,6 +326,9 @@ namespace LA1300_Penut
                 if (Wette * 2 <= Guthaben)
                 {
                     Wette = Wette*2;
+                    Guthaben = Guthaben - Wette;
+                    GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
+                    GuthabenZahl.Refresh();
                     button7_Click(sender, e);
                 }
                 else
