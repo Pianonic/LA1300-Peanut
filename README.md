@@ -1,7 +1,7 @@
 # _-_ Team Peanut _-_
 
 ## überslicht
-[Program.md](https://github.com/Pianonic/LA1300-Peanut/blob/main/Program.md)
+[Program.cs](https://github.com/Pianonic/LA1300-Peanut/blob/main/Form1.cs)
 
 [Lernbericht.md](https://github.com/Pianonic/LA1300-Peanut/blob/main/Lernbericht.md)
 
