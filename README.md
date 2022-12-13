@@ -1,6 +1,8 @@
 # _-_ Team Peanut _-_
 
 ## überslicht
+[EXE Release](https://github.com/Pianonic/LA1300-Peanut/blob/main/Form1.cs)
+
 [Program.cs](https://github.com/Pianonic/LA1300-Peanut/blob/main/Form1.cs)
 
 [Lernbericht.md](https://github.com/Pianonic/LA1300-Peanut/blob/main/Lernbericht.md)
