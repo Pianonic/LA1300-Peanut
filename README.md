@@ -1,7 +1,7 @@
 # _-_ Team Peanut _-_
 
 ## überslicht
-[EXE Release](https://github.com/Pianonic/LA1300-Peanut/blob/main/Form1.cs)
+[EXE Release](https://github.com/Pianonic/LA1300-Peanut/releases/tag/Release)
 
 [Program.cs](https://github.com/Pianonic/LA1300-Peanut/blob/main/Form1.cs)
 
