@@ -187,7 +187,7 @@ namespace LA1300_Penut
             }
             else
             {
-                MessageBox.Show("Sie müssen zuerst wetten!", "BlackJack");
+                MessageBox.Show("Sie müssen zuerst wetten!", "BlackJack - Mitteilung");
             }
 
         }
@@ -286,24 +286,26 @@ namespace LA1300_Penut
                     {
                         rndNum = rnd.Next(fileArray.Length);
                         K1.Image = new Bitmap(fileArray[rndNum]);
-
+                        cache[0] = fileArray[rndNum];
                         AddPoints();
 
                         rndNum = rnd.Next(fileArray.Length);
                         K2.Image = new Bitmap(fileArray[rndNum]);
-
+                        cache[1] = fileArray[rndNum];
                         AddPoints();
 
-                        FirstRound = false;
+                        
 
                         if (Points == 21)
                         {
-                            MessageBox.Show("Sie haben BlackJack", "BalckJack");
+                            MessageBox.Show("Sie haben BlackJack", "BalckJack - Mitteilung");
                             Guthaben = Guthaben + Wette + (1.5 * Wette);
                             GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
                             GuthabenZahl.Refresh();
                             Wette = 0;
                         }
+
+                        FirstRound = false;
                     }
                     isBet = true;
                     isClick = false;
@@ -312,21 +314,20 @@ namespace LA1300_Penut
             }
             else
             {
-                MessageBox.Show("Sie können nicht mehr wetten!", "BlackJack");
+                MessageBox.Show("Sie können nicht mehr wetten!", "BlackJack - Mitteilung");
             }
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-            DialogResult result = MessageBox.Show("Hallo", "Test", buttons);
+            MessageBox.Show("1. Zuerst platzieren Sie Ihren Einsatz.  \r\n2. Der Dealer teilt jedem Spieler zwei Karten und sich selbst zwei Karten aus, eine nach oben, eine nach unten.  \r\n3. Der Spieler mit der höchsten Karte erhält den Dealer-Button und beginnt.  \r\n4. Der erste Spieler hat die Option, zu Hit (eine Karte ziehen) oder zu Stand (keine Karte ziehen).  \r\n5. Der Spieler kann auch Doubledown, Split oder Surrender wählen, wenn er die entsprechenden Karten erhält. \r\n6. Nachdem der erste Spieler fertig ist, geht das Spiel weiter, bis alle Spieler ihre Hände abgeschlossen haben. \r\n7. Der Dealer dreht dann die untere Karte um und entscheidet, ob er Hit oder Stand wählt.  \r\n8. Der Dealer muss Hit nehmen, wenn seine Gesamtsumme weniger als 17 beträgt. Er muss Stand nehmen, wenn seine Gesamtsumme 17 oder mehr beträgt.  \r\n9. Nachdem der Dealer seine Hand abgeschlossen hat, werden alle Spielerhände mit der Hand des Dealers verglichen.  \r\n10. Wenn die Hand des Spielers höher ist als die des Dealers, gewinnt der Spieler. Wenn die Hand des Dealers höher ist, gewinnt der Dealer. Wenn es ein Unentschieden gibt, erhält der Spieler seinen Einsatz zurück.", "BlackJack - Anleitung");
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             if (isBet)
             {
-                if (WetteZwischenSp * 2 <= Guthaben)
+                if (WetteZwischenSp <= Guthaben)
                 {
                     Guthaben = Guthaben - WetteZwischenSp;
                     WetteZwischenSp = WetteZwischenSp * 2;
@@ -340,12 +341,12 @@ namespace LA1300_Penut
                 }
                 else
                 {
-                    MessageBox.Show("Sie haben zu wenig Geld", "BlackJack");
+                    MessageBox.Show("Sie haben zu wenig Geld", "BlackJack - Mitteilung");
                 }
             }
             else
             {
-                MessageBox.Show("Sie müssen zuerst wetten!", "BlackJack");
+                MessageBox.Show("Sie müssen zuerst wetten!", "BlackJack - Mitteilung");
             }
         }
 
@@ -393,19 +394,26 @@ namespace LA1300_Penut
             }
             else
             {
-                MessageBox.Show("Sie müssen zuerst wetten!", "BlackJack");
+                MessageBox.Show("Sie müssen zuerst wetten!", "BlackJack - Mitteilung");
             }
         }
 
+        //Split
         private void SplitB_Click(object sender, EventArgs e)
         {
             if(isBet)
             {
-                MessageBox.Show("Dieser Button macht noch nichts :)", "BlackJack");
+                Form2 form2 = new Form2();
+                form2.Show();
+                MessageBox.Show("Dieser Button macht noch nichts :)", "BlackJack - Mitteilung");
+                if (cache[0] == cache[1])
+                {
+
+                }
             }
             else
             {
-                MessageBox.Show("Sie müssen zuerst wetten!", "BlackJack");
+                MessageBox.Show("Sie müssen zuerst wetten!", "BlackJack - Mitteilung");
             }
             //Create_New_Card();
         }
@@ -541,7 +549,7 @@ namespace LA1300_Penut
 
             if (Guthaben < 1)
             {
-                MessageBox.Show("Sie haben Verloren. Spiel Beendet", "BalckJack");
+                MessageBox.Show("Sie haben kein Geld mehr. Spiel Beendet", "BlackJack - Mitteilung");
                 System.Windows.Forms.Application.Exit();
             }
         }
