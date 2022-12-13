@@ -401,14 +401,14 @@ namespace LA1300_Penut
         //Split
         private void SplitB_Click(object sender, EventArgs e)
         {
-            if(isBet)
+            if (isBet)
             {
-                Form2 form2 = new Form2();
-                form2.Show();
-                MessageBox.Show("Dieser Button macht noch nichts :)", "BlackJack - Mitteilung");
+                MessageBox.Show("Sie können diesen Button nicht betätigen.", "BlackJack - Mitteilung");
                 if (cache[0] == cache[1])
                 {
-
+                    MessageBox.Show("Leeres Feld wurde generiert.", "BlackJack - Mitteilung");
+                    Form2 form2 = new Form2();
+                    form2.Show();
                 }
             }
             else
