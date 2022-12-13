@@ -110,7 +110,7 @@ Total: 900 min.
 |14.A|06.12.2022|Erismann|45|120|
 |15.A|06.12.2022| Gilardoni |45|60|
 |15.B|06.12.2022| Gilardoni |45|60|
-|12.A|Koch|45||
+|12.A|13.12.2022|Koch|45||
 
 
 ## 5 Kontrollieren
