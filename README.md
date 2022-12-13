@@ -8,6 +8,6 @@
 [Projekt_Dokumentatioin.md](https://github.com/Pianonic/LA1300-Peanut/blob/main/Projekt_Dokumentatioin.md)
 
 ## Teaser
-![](https://github.com/Pianonic/LA1300-Peanut/blob/main/Teaser.png)
+![](https://github.com/Pianonic/LA1300-Peanut/blob/main/Bilder/Teaser.png?raw=true)
 
 
