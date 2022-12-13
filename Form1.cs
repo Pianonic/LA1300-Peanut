@@ -17,6 +17,7 @@ namespace LA1300_Penut
     public partial class Form1 : Form
     {
         int Wette = 1;
+        int WetteZwischenSp = 0;
         double Guthaben = 10;
         string currentdyrectorry = Environment.CurrentDirectory;
         string[] fileArray = Directory.GetFiles(@"C:\Users\nicla\source\repos\LA1300-Peanut\Cards\", "*.png", SearchOption.AllDirectories);
@@ -74,7 +75,8 @@ namespace LA1300_Penut
 
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        //karte aufnehmen
+        private void button7_Click(object sender, EventArgs e)   
         {
             if (isBet)
             {
@@ -232,7 +234,7 @@ namespace LA1300_Penut
                 WetteZahl.Refresh();
             }
         }
-
+        //Leave
         private void button3_Click(object sender, EventArgs e)
         {
             string message = "Möchtest du das Spiel wirklich verlassen?";
@@ -250,7 +252,7 @@ namespace LA1300_Penut
             
         }
 
-
+        //setzen
         private void button8_Click(object sender, EventArgs e)
         {
             if (isBet == false)
@@ -305,6 +307,7 @@ namespace LA1300_Penut
                     }
                     isBet = true;
                     isClick = false;
+                    WetteZwischenSp = Wette;
                 }
             }
             else
@@ -323,19 +326,21 @@ namespace LA1300_Penut
         {
             if (isBet)
             {
-                if (Wette * 2 <= Guthaben)
+                if (WetteZwischenSp * 2 <= Guthaben)
                 {
-                    Wette = Wette*2;
-                    Guthaben = Guthaben - Wette;
+                    Guthaben = Guthaben - WetteZwischenSp;
+                    WetteZwischenSp = WetteZwischenSp * 2;
                     GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
                     GuthabenZahl.Refresh();
                     button7_Click(sender, e);
                     isBet = true;
+                    Wette = WetteZwischenSp;
                     button6_Click(sender, e);
+                    WetteZwischenSp = 0;
                 }
                 else
                 {
-                    MessageBox.Show("Sie müssen die wette verniedrigen oder haben zu wenig Geld", "BlackJack");
+                    MessageBox.Show("Sie haben zu wenig Geld", "BlackJack");
                 }
             }
             else
@@ -344,6 +349,7 @@ namespace LA1300_Penut
             }
         }
 
+        //Stay
         private void button6_Click(object sender, EventArgs e)
         {
             if (isBet)
