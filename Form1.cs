@@ -20,7 +20,7 @@ namespace LA1300_Penut
         double Guthaben = 10;
         string currentdyrectorry = Environment.CurrentDirectory;
         string[] fileArray = Directory.GetFiles(@"C:\Users\nicla\source\repos\LA1300-Peanut\Cards\", "*.png", SearchOption.AllDirectories);
-        string CardBackground = @"C:\Users\nicla\source\repos\LA1300-Peanut\CardBackground.png";
+        string CardBackground = @"C:\Users\nicla\source\repos\LA1300-Peanut\Bilder\CardBackground.png";
 
         string filename = null;
         string[] NamesPNGFull = new string[52];
@@ -330,6 +330,8 @@ namespace LA1300_Penut
                     GuthabenZahl.Text = $"Guthaben: {Guthaben} CHF";
                     GuthabenZahl.Refresh();
                     button7_Click(sender, e);
+                    isBet = true;
+                    button6_Click(sender, e);
                 }
                 else
                 {
@@ -536,6 +538,11 @@ namespace LA1300_Penut
                 MessageBox.Show("Sie haben Verloren. Spiel Beendet", "BalckJack");
                 System.Windows.Forms.Application.Exit();
             }
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

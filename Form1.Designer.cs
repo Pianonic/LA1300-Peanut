@@ -171,6 +171,7 @@
             this.panel3.Controls.Add(this.DoubleB);
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // AddKarteB
             // 
