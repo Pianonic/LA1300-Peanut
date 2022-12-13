@@ -1,4 +1,4 @@
-# _-_ Team Peanut _-_
+# Team Peanut
 
 ## überslicht
 [EXE Release](https://github.com/Pianonic/LA1300-Peanut/releases/tag/Release)
