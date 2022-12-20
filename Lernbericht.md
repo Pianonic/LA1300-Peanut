@@ -12,6 +12,10 @@ In diesem Projekt haben wir ein Programm programmiert in Winforms, mit dem man B
 ## Beschreibung
 Um ein Bild in winform zu verändern werden in unserem Projekt Knöpfe verwendet um Karten aufzudecken, also wird das Bild der Rückseite einer Karte mit dem Bild der zu Vorderseite überschrieben.
 Anhand dieses vereinfachten Beispiels wird per Knopfdruck das Bild in einer PixtureBox geändert.
+Im Ersten Teil des Codes wird definiert in welcher box überhaupt etwas passieren soll.
+Im 2. Teil dann was genau, also in diesam fall ein Bild(.image)
+Mit new Bitmap() wird dann ein neues Bild eingefügt, wobei in den Klammern der Dateipfad zur entsprechenden JPG oder GIF datei vorliegt.
+nun wird Für jeden Button ein Bild oder GIF angezeigt, welches das alte überschreibt.
 Der C# code sieht wie folgt aus:
 ```c#
 using System;
@@ -54,16 +58,13 @@ namespace TeamPenutExample
 ![Unbenannt](https://user-images.githubusercontent.com/79938743/208619919-4b060429-8480-4d05-8f25-aca3a46fdab4.png)
 
 ![Gif2](https://user-images.githubusercontent.com/79938743/208619842-db16314b-020c-4514-9cf0-635f2af4e447.gif)
-Im Ersten Teil des Codes wird definiert in welcher box überhaupt etwas passieren soll.
-Im 2. Teil dann was genau, also in diesam fall ein Bild(.image)
-Mit new Bitmap() wird dann ein neues Bild eingefügt, wobei in den Klammern der Dateipfad zur entsprechenden JPG oder GIF datei vorliegt.
 
-nun wird Für jeden Button ein Bild oder GIF angezeigt, welches das alte überschreibt.
+
 
 
 ## Verifikation
 Text: Beschreibung wie unser Code funktioniert. 
-Surcecode: Der Beispiels Code zeigt wie man so etwas programmiert. 
+Sourcecode: Der Beispiels Code zeigt wie man so etwas programmiert. 
 Screenshot: Der Screenshot soll den Code noch verständlicher machen.
 GIF: Das GIF zeigt wie der Code funktioniert.
 
