@@ -7,7 +7,7 @@
 
 ## Was habe ich gelernt?
 
-✍️ Beschreiben Sie in einem Satz **eine** Sache, die Sie bei diesem Projekt gelernt haben und die Sie in diesem Lern-Bericht dokumentieren.
+✍️ Wir haben gelernt wie man ein Bild Wechselt auf Knopfdruck.
 
 ## Beschreibung
 
@@ -20,12 +20,12 @@
 
 ## Verifikation
 
-✍️ Wir haben textlich unsere Entdeckung beschrieben, dann haben wir ein Screenshot von dem Code und dann ein Video von dem Interface.
+✍️ Wir haben textlich unsere Entdeckung beschrieben, haben ein Screenshot von dem Code und dann ein Video von dem Interface.
 
 # Reflektion zum Arbeitsprozess
 
-👍 Wir waren schnell mit dem Programm, es gab gute Arbeitsphasen.; 
+👍 Wir waren schnell mit dem Programm, es gab gute Arbeitsphasen. 
 
-👎 Es haben nicht alle gleichviel gearbeitet,die Arbeit war nicht richtig eingeteilt.
+👎 Es haben nicht alle gleichviel gearbeitet, die Arbeit war nicht richtig eingeteilt.
 
 **VBV**: ✍️ Formulieren Sie davon ausgehend einen *handelbaren* Verbesserungsvorschlag.
