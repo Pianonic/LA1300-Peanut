@@ -7,10 +7,12 @@ In diesem Projekt haben wir ein Programm programmiert in Winforms, mit dem man B
 
 ## Was habe ich gelernt?
 
- Wir haben gelernt wie man ein Bild in Winforms, mit einem Knopfdruck wechselt.
+ Wir haben gelernt wie man ein Bild in Winforms mit einem Knopfdruck wechselt.
 
 ## Beschreibung
-
+Dies wird in Unserem Projekt verwendet um die Karte aufzudecken, also wird das Bild der Rückseite einer Karte mit dem Bild der Vorderseite überschrieben
+Anhand dieses Beispiels wird Per Knopfdruck das Bild in einer PixtureBox geändert.
+Der C# code sioeh wie folgt aus
 ```c#
 ` using System;
 using System.Collections.Generic;
@@ -49,8 +51,10 @@ namespace TeamPenutExample
 }
 `
 ```
-![Gif2](https://user-images.githubusercontent.com/79938743/208619842-db16314b-020c-4514-9cf0-635f2af4e447.gif)
 ![Unbenannt](https://user-images.githubusercontent.com/79938743/208619919-4b060429-8480-4d05-8f25-aca3a46fdab4.png)
+
+![Gif2](https://user-images.githubusercontent.com/79938743/208619842-db16314b-020c-4514-9cf0-635f2af4e447.gif)
+
 
 ## Verifikation
 Text: Beschreibung wie unser Code funktioniert.
