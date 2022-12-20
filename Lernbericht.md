@@ -1,13 +1,13 @@
 # Lern-Bericht
-✍️ ggf. Ihr Gruppenname und Ihre Gruppenmitglieder
+Peanut: Koch,Meyer,Gilardoni,Grigioni,Erismann
 
 ## Einleitung
 
-✍️ Ein Satz, worum es in dem Projekt ging. Muss für einen externen Leser einfach zu verstehen sein.
+In diesem Projekt haben wir ein Programm programmiert in Winforms, mit dem man Black Jack spielen kann.
 
 ## Was habe ich gelernt?
 
- Wir haben gelernt wie man ein Bild Wechselt auf Knopfdruck.
+ Wir haben gelernt wie man ein Bild in Winforms, mit einem Knopfdruck wechselt.
 
 ## Beschreibung
 
@@ -19,7 +19,9 @@
 * Ein Link zu einem *selbst aufgenommenen* youtube-Video oder `.gif`.
 
 ## Verifikation
+Text: Beschreibung wie unser Code funktioniert.
 
+GIF:
  Wir haben textlich unsere Entdeckung beschrieben, haben ein Screenshot von dem Code und dann ein Video von dem Interface wie die Karte wechselt.
 
 # Reflektion zum Arbeitsprozess
