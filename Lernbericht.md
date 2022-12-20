@@ -20,12 +20,12 @@
 
 ## Verifikation
 
-✍️ Erklären Sie kurz und bündig, inwiefern die von Ihnen verwendeten Medien zeigen, was Sie gelernt haben.
+✍️ Wir haben textlich unsere Entdeckung beschrieben, dann haben wir ein Screenshot von dem Code und dann ein Video von dem Interface.
 
 # Reflektion zum Arbeitsprozess
 
-👍 Überlegen Sie sich jeweils etwas, was gut an Ihrer Arbeit lief; 
+👍 Wir waren schnell mit dem Programm, es gab gute Arbeitsphasen.; 
 
-👎 und etwas, was nicht gut lief.
+👎 Es haben nicht alle gleichviel gearbeitet,die Arbeit war nicht richtig eingeteilt.
 
 **VBV**: ✍️ Formulieren Sie davon ausgehend einen *handelbaren* Verbesserungsvorschlag.
