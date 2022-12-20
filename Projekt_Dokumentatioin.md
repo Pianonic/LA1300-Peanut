@@ -131,10 +131,26 @@ Total: 900 min.
 
 | TC-№ | Datum | Resultat | Tester |
 | ---- | ----- | -------- | ------ |
-| 1.1  |       |          |        |
-| ...  |       |          |        |
+| 1.1  | 20.12.22 | stimmt         | Meyer       |
+| 2.1  | 20.12.22 | stimmt         | Meyer       |
+| 3.1  | 20.12.22 | stimmt         | Meyer       |
+| 4.1  | 20.12.22 | stimmt nicht   | Meyer       |
+| 5.1  | 20.12.22 | stimmt         | Meyer       |
+| 6.1  | 20.12.22 | stimmt         | Meyer       |
+| 7.1  | 20.12.22 | stimmt         | Meyer       |
+| 8.1  | 20.12.22 | stimmt         | Meyer       |
+| 9.1  | 20.12.22 | stimmt         | Meyer       |
+| 10.1  | 20.12.22 | stimmt         | Meyer       |
+| 11.1  | 20.12.22 | stimmt         | Meyer       |
+| 12.1  | 20.12.22 | stimmt         | Meyer       |
+| 13.1  | 20.12.22 | stimmt         | Meyer       |
+| 14.1  | 20.12.22 | stimmt         | Meyer       |
+| 15.1  | 20.12.22 | stimmt         | Meyer       |
+| 16.1  | 20.12.22 | stimmt nicht   | Meyer       |
 
-✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
+Programm Funktioniert bis auf 2 funktionen einwandfrei.
+Split funktion funktioniert gar nicht.
+Punkteanzeige wurde im verlauf des Projekts als funktion verworfen, da diese als überflüssig angesehen wurde.
 
 ### 5.2 Exploratives Testen
 
