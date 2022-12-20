@@ -14,7 +14,7 @@ Um ein Bild in winform zu verändern werden in unserem Projekt Knöpfe verwendet
 Anhand dieses vereinfachten Beispiels wird per Knopfdruck das Bild in einer PixtureBox geändert.
 Der C# code sieht wie folgt aus:
 ```c#
-` using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -49,7 +49,7 @@ namespace TeamPenutExample
         }
     }
 }
-`
+
 ```
 ![Unbenannt](https://user-images.githubusercontent.com/79938743/208619919-4b060429-8480-4d05-8f25-aca3a46fdab4.png)
 
@@ -63,9 +63,10 @@ nun wird Für jeden Button ein Bild oder GIF angezeigt, welches das alte übersc
 
 
 ## Verifikation
-Text: Beschreibung wie unser Code funktioniert.
-Surcecode: Der Beispiels Code zeigt wie man so etwas programmiert.
-GIF: Das GiF zeigt wie der Code funktioniert.
+Text: Beschreibung wie unser Code funktioniert. 
+Surcecode: Der Beispiels Code zeigt wie man so etwas programmiert. 
+Screenshot: Der Screenshot soll den Code noch verständlicher machen.
+GIF: Das GIF zeigt wie der Code funktioniert.
 
 # Reflektion zum Arbeitsprozess
 
@@ -80,4 +81,5 @@ GIF: Das GiF zeigt wie der Code funktioniert.
 👎 Wir haben eine zu aufwendige Funktion einbauen wollen und haben so viel Zeit verbraucht und es nicht geschaft.
 
 
-**VBV**: 
+**VBV**: Wir sollten bei nächsten nicht so schnell Aufgeben. Wenn wir das nächste Mal etwas nicht verstehen und nicht weiterkommen, sollten wir ein Lehrer hinzuziehen oder noch mehr im Internet suchen. Dazu sollten wir nicht zu schwierige Aufgaben nehmen, weil wir sonst zu stark unter Druck sind und somit bei etwas anders vernachlässigen (Parameter). Darum sollten wir unsere Aufgaben mehr nach unseren Fähigkeiten und Möglichkeiten gestalten, heisst wir müssten klar sein, was wir in einem Projekt schaffen können.
+
