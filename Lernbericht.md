@@ -26,7 +26,9 @@ GIF: Das GiF zeigt wie der Code funktioniert.
 # Reflektion zum Arbeitsprozess
 
 👍 Wir waren schnell mit dem Programm vertraut
+
 👍 Wir hatten gute Arbeitsphasen.
+
 👍 
 
 👎 Es haben nicht alle gleichviel gearbeitet, die Arbeit war nicht richtig eingeteilt.
