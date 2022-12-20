@@ -53,11 +53,10 @@ namespace TeamPenutExample
 ```
 ![Unbenannt](https://user-images.githubusercontent.com/79938743/208619919-4b060429-8480-4d05-8f25-aca3a46fdab4.png)
 
+![Gif2](https://user-images.githubusercontent.com/79938743/208619842-db16314b-020c-4514-9cf0-635f2af4e447.gif)
 Im Ersten Teil des Codes wird definiert in welcher box überhaupt etwas passieren soll.
 Im 2. Teil dann was genau, also in diesam fall ein Bild(.image)
 Mit new Bitmap() wird dann ein neues Bild eingefügt, wobei in den Klammern der Dateipfad zur entsprechenden JPG oder GIF datei vorliegt.
-
-![Gif2](https://user-images.githubusercontent.com/79938743/208619842-db16314b-020c-4514-9cf0-635f2af4e447.gif)
 
 nun wird Für jeden Button ein Bild oder GIF angezeigt, welches das alte überschreibt.
 
