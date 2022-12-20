@@ -28,4 +28,4 @@
 
 👎 Es haben nicht alle gleichviel gearbeitet, die Arbeit war nicht richtig eingeteilt.
 
-**VBV**: ✍️ Formulieren Sie davon ausgehend einen *handelbaren* Verbesserungsvorschlag.
+**VBV**: Nächstes Mal sollten wir absprechen dass alle etwa gleich viel Arbeiten.
