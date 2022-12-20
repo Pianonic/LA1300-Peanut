@@ -52,6 +52,7 @@ namespace TeamPenutExample
 `
 ```
 ![Unbenannt](https://user-images.githubusercontent.com/79938743/208619919-4b060429-8480-4d05-8f25-aca3a46fdab4.png)
+
 Im Ersten Teil des Codes wird definiert in welcher box überhaupt etwas passieren soll.
 Im 2. Teil dann was genau, also in diesam fall ein Bild(.image)
 Mit new Bitmap() wird dann ein neues Bild eingefügt, wobei in den Klammern der Dateipfad zur entsprechenden JPG oder GIF datei vorliegt.
