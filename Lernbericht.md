@@ -20,13 +20,14 @@ In diesem Projekt haben wir ein Programm programmiert in Winforms, mit dem man B
 
 ## Verifikation
 Text: Beschreibung wie unser Code funktioniert.
-
-GIF:
- Wir haben textlich unsere Entdeckung beschrieben, haben ein Screenshot von dem Code und dann ein Video von dem Interface wie die Karte wechselt.
+Surcecode: Der Beispiels Code zeigt wie man so etwas programmiert.
+GIF: Das GiF zeigt wie der Code funktioniert.
 
 # Reflektion zum Arbeitsprozess
 
-👍 Wir waren schnell mit dem Programm, es gab gute Arbeitsphasen. 
+👍 Wir waren schnell mit dem Programm vertraut
+👍 Wir hatten gute Arbeitsphasen.
+👍 
 
 👎 Es haben nicht alle gleichviel gearbeitet, die Arbeit war nicht richtig eingeteilt.
 
