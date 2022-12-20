@@ -45,9 +45,22 @@ Wir machen ein Programm mit dem man Black Jack spielen kann.
 
 | TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
-| 1.1  |              |         |                   |
-| ...  |              |         |                   |
-
+| 1.1  |    start     |  Knopf "karte"      |      +1 zufällige Karte             |
+| 2.1  |    start     |  Knopf "Hold"       |  spielwert wird berechnet                 |
+| 3.1  |    start     |    nichts     |          +2 karten für spieler und bank         |
+| 4.1  |    2 gleiche karten        |  knopf "split"      |    karten auf 2 stapel aufteilen |
+| 5.1  |    start     | knopf "double"       |  einsatz verdoppelt  sich                 |
+| 6.1  |    start     | einsatz + oder -        |  einsatz ändert sich                 |
+| 7.1  |    start     |    keine     |    guthaben einzeigen                |
+| 8.1  |    start, 2 karten       |  keine   |     Karten zeigt sich              |
+| 9.1  |    programm läuft         |   knopf "leave"   |       spiel schliesst sich            |
+| 10.1 |              |         |                   |
+| 11.1 |    quellcode          |   keine      |     winforms              |
+| 12.1 |   start      | knopf "regeln"       |   regeln werden angezeigt                |
+| 13.1 |      spieler gewinnt        |    keine     |       guthaben + doppelter einsatz            |
+| 14.1 |       spieler hat BlackJack       |   keine       |             guthaben + dreifacher Einsatz      |
+| 15.1 |     Ass gezogen         |     keine    |   wert 11 doer 1 soll berechnet und gezeigt werdern                  |
+| 16.1 |     Punktanzahl existiert         |   button press      |        anzeige ändert sich           |
 ✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
 
 ### 1.4 Diagramme
