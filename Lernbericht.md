@@ -25,12 +25,15 @@ GIF: Das GiF zeigt wie der Code funktioniert.
 
 # Reflektion zum Arbeitsprozess
 
-👍 Wir waren schnell mit dem Programm vertraut
+👍 Wir waren schnell mit Winforms vertraut.
 
 👍 Wir hatten gute Arbeitsphasen.
 
-👍 
+👍 Gute Kommunikation im Team.
 
-👎 Es haben nicht alle gleichviel gearbeitet, die Arbeit war nicht richtig eingeteilt.
+👎 Wir haben Parameter in Winforms nicht verstanden und haben sie so nicht verwendet.
 
-**VBV**: Nächstes Mal sollten wir absprechen dass alle etwa gleich viel Arbeiten.
+👎 Wir haben eine zu aufwendige Funktion einbauen wollen und haben so viel Zeit verbraucht und es nicht geschaft.
+
+
+**VBV**: 
