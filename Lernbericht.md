@@ -10,9 +10,9 @@ In diesem Projekt haben wir ein Programm programmiert in Winforms, mit dem man B
  Wir haben gelernt wie man ein Bild in Winforms mit einem Knopfdruck wechselt.
 
 ## Beschreibung
-Um ein Bild in winform zu verändern werden in unserem Projekt Knöpfe verwendet um Karten aufzudecken, also wird das Bild der Rückseite einer Karte mit dem Bild der zu Vorderseite überschrieben.
+Um ein Bild in Winform zu verändern werden in unserem Projekt Knöpfe verwendet um Karten aufzudecken, also wird das Bild der Rückseite einer Karte mit dem Bild der zu Vorderseite überschrieben.
 Anhand dieses vereinfachten Beispiels wird per Knopfdruck das Bild in einer PixtureBox geändert.
-Im Ersten Teil des Codes wird definiert in welcher box überhaupt etwas passieren soll.
+Im Ersten Teil des Codes wird definiert in welcher Box überhaupt etwas passieren soll.
 Im 2. Teil dann was genau, also in diesam fall ein Bild(.image)
 Mit new Bitmap() wird dann ein neues Bild eingefügt, wobei in den Klammern der Dateipfad zur entsprechenden JPG oder GIF datei vorliegt.
 nun wird Für jeden Button ein Bild oder GIF angezeigt, welches das alte überschreibt.
