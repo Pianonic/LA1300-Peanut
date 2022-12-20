@@ -11,16 +11,7 @@ In diesem Projekt haben wir ein Programm programmiert in Winforms, mit dem man B
 
 ## Beschreibung
 
-✍️ Verwenden Sie drei verschiedene Medien, um zu zeigen, was Sie gelernt haben. Zum Beispiel:
-
-* Eine textliche Beschreibung
-* Ein deutliches, aussagekräftiges Bild oder eine kommentierte Bildschirm-Aufnahme
-* Ein gut dokumentierter Code-Fetzen
-* Ein Link zu einem *selbst aufgenommenen* youtube-Video oder `.gif`.
-
-## Verifikation
-Text: Beschreibung wie unser Code funktioniert.
-Surcecode: Der Beispiels Code zeigt wie man so etwas programmiert.
+```c#
 ` using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -57,10 +48,14 @@ namespace TeamPenutExample
     }
 }
 `
-GIF: Das GiF zeigt wie der Code funktioniert.
-
+```
 ![Gif2](https://user-images.githubusercontent.com/79938743/208619842-db16314b-020c-4514-9cf0-635f2af4e447.gif)
 ![Unbenannt](https://user-images.githubusercontent.com/79938743/208619919-4b060429-8480-4d05-8f25-aca3a46fdab4.png)
+
+## Verifikation
+Text: Beschreibung wie unser Code funktioniert.
+Surcecode: Der Beispiels Code zeigt wie man so etwas programmiert.
+GIF: Das GiF zeigt wie der Code funktioniert.
 
 # Reflektion zum Arbeitsprozess
 
