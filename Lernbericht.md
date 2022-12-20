@@ -7,7 +7,7 @@
 
 ## Was habe ich gelernt?
 
-✍️ Wir haben gelernt wie man ein Bild Wechselt auf Knopfdruck.
+ Wir haben gelernt wie man ein Bild Wechselt auf Knopfdruck.
 
 ## Beschreibung
 
@@ -20,7 +20,7 @@
 
 ## Verifikation
 
-✍️ Wir haben textlich unsere Entdeckung beschrieben, haben ein Screenshot von dem Code und dann ein Video von dem Interface.
+ Wir haben textlich unsere Entdeckung beschrieben, haben ein Screenshot von dem Code und dann ein Video von dem Interface wie die Karte wechselt.
 
 # Reflektion zum Arbeitsprozess
 
