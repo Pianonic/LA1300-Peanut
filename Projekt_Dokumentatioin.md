@@ -1,5 +1,5 @@
 # LA1300-Penut
-☝️ Alle Text-Stellen, welche mit einem ✍️ beginnen, können Sie löschen, sobald Sie die entsprechende Stellen ausgefüllt haben.
+
 
 ✍️ Peanut: Koch,Meyer,Gilardoni,Grigioni,Erismann
 
@@ -39,7 +39,7 @@ Wir machen ein Programm mit dem man Black Jack spielen kann.
 | 16 |    Muss         | Funktional | Als Spieler möchte ich die Option haben meine Punktzahlanzeige ein- und auszuschalten. | 
 
 
-✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: *Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️*.
+
 
 ### 1.3 Testfälle
 
@@ -61,11 +61,10 @@ Wir machen ein Programm mit dem man Black Jack spielen kann.
 | 14.1 |       spieler hat BlackJack       |   keine       |             guthaben + dreifacher Einsatz      |
 | 15.1 |     Ass gezogen         |     keine    |   wert 11 doer 1 soll berechnet und gezeigt werdern                  |
 | 16.1 |     Punktanzahl existiert         |   button press      |        anzeige ändert sich           |
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
+
 
 ### 1.4 Diagramme
 
-✍️ Hier können Sie PAPs, Use Case- und Gantt-Diagramme oder Ähnliches einfügen.
 
 ## 2 Planen
 
